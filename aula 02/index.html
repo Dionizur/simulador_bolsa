@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Simulador de Bolsa</title>
+</head>
+<body>
+    <div id="app">
+        <header>
+            <h1>Simulador de Bolsa</h1>
+            <nav>
+                <button id="menu-toggle">☰</button>
+            </nav>
+        </header>
+
+        <main id="main-content">
+            <div id="home" class="screen active">
+                <h2>Simule, Aprenda e Invista!</h2>
+                <button onclick="showScreen('simulation')">Começar Simulação</button>
+                <button onclick="showScreen('learn')">Aprenda sobre a Bolsa</button>
+                <button onclick="showScreen('courses')">Cursos Disponíveis</button>
+            </div>
+
+            <div id="simulation" class="screen">
+                <h2>Simulação da Bolsa de Valores</h2>
+                <div id="chart">[Gráfico Interativo]</div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Ação</th>
+                            <th>Preço Atual</th>
+                            <th>Variação do Dia</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Empresa A</td>
+                            <td>R$ 100</td>
+                            <td>+2%</td>
+                            <td><button>Comprar</button> <button>Vender</button></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <button onclick="showScreen('home')">Voltar</button>
+            </div>
+
+            <div id="learn" class="screen">
+                <h2>Aprenda sobre a Bolsa</h2>
+                <p>O que é a bolsa de valores?</p>
+                <p>Como funciona a compra e venda de ações.</p>
+                <button onclick="showScreen('home')">Voltar</button>
+            </div>
+
+            <div id="courses" class="screen">
+                <h2>Cursos Disponíveis</h2>
+                <ul>
+                    <li>Curso 1: Introdução ao Mercado de Ações <button>Inscreva-se</button></li>
+                    <li>Curso 2: Estratégias Avançadas de Investimento <button>Inscreva-se</button></li>
+                    <li>Curso 3: Análise Técnica e Fundamental <button>Inscreva-se</button></li>
+                </ul>
+                <button onclick="showScreen('home')">Voltar</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
