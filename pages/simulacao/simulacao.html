@@ -4,66 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="simulacao.css">
-    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="simulacao.js"></script>
 
-    <title>Simulação de Bolsa de Valores</title>
+    <title>Simulação</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Simulação de Bolsa de Valores</h1>
-        <div class="stock-list">
-            <h2>Ações</h2>
-            <ul id="stocks">
-                <li>
-                    <input type="checkbox" id="AAPL">
-                    <label for="AAPL">Apple Inc. (AAPL)</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="GOOGL">
-                    <label for="GOOGL">Alphabet Inc. (GOOGL)</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="MSFT">
-                    <label for="MSFT">Microsoft Corporation (MSFT)</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="AMZN">
-                    <label for="AMZN">Amazon.com, Inc. (AMZN)</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="FB">
-                    <label for="FB">Facebook, Inc. (FB)</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="TSLA">
-                    <label for="TSLA">Tesla, Inc. (TSLA)</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="NFLX">
-                    <label for="NFLX">Netflix, Inc. (NFLX)</label>
-                </li>
-                <li>
-                    <input type="checkbox" id="DIS">
-                    <label for="DIS">The Walt Disney Company (DIS)</label>
-                </li>
-            </ul>
-        </div>
-        <div class="portfolio">
-            <h2>Seu Portfólio</h2>
-            <ul id="portfolio"></ul>
-        </div>
-        <div class="controls">
-            <input type="text" id="stockName" placeholder="Nome da Ação">
-            <input type="number" id="stockPrice" placeholder="Preço">
-            <input type="number" id="quantity" placeholder="Quantidade">
-            <button id="buyButton">Comprar</button>
-            <button id="sellButton">Vender</button>
-        </div>
-        <div class="chart-container">
-            <canvas id="chart"></canvas>
-        </div>
-    </div>
-    <script src="script.js"></script>
+    <canvas id="myChart"></canvas>
 </body>
 </html>
