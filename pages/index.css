@@ -12,10 +12,16 @@ body {
     background-color: #f9f9f9;
 }
 
-.container {
+.containert {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    margin-right: 3px;
+    margin-left: 10px;
+
+}
+.container p{
+    margin-right: 10px; 
 }
 
 .titulo{
@@ -27,7 +33,7 @@ header {
     background-color: #333;
     color: #fff;
     padding: 20px;
-    text-align: center;
+    text-align:left;
 }
 
 header .logo {
@@ -47,11 +53,15 @@ header nav ul {
 header nav ul li {
     margin-right: 150px;
     margin-left: 150px;
+    background-color: #b7f5b8;
+    border-radius: 20px;
 }
 
 header nav a {
-    color: #fff;
+    color: #000000;
     text-decoration: none;
+    margin-right: 60px;
+    margin-left: 60px;
 }
 
 header .btn {
