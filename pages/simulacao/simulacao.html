@@ -6,7 +6,6 @@
     <link rel="stylesheet" href="simulacao.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="simulacao.js"></script>
-
     <title>Simulação de Bolsa de Valores</title>
 </head>
 <body>
@@ -16,36 +15,44 @@
             <h2>Ações</h2>
             <ul id="stocks">
                 <li>
-                    <input type="checkbox" id="AAPL">
-                    <label for="AAPL">Apple Inc. (AAPL)</label>
+                    <span>Apple Inc. (AAPL)</span>
+                    <button class="buyButton" data-stock="AAPL">Comprar</button>
+                    <button class="sellButton" data-stock="AAPL">Vender</button>
                 </li>
                 <li>
-                    <input type="checkbox" id="GOOGL">
-                    <label for="GOOGL">Alphabet Inc. (GOOGL)</label>
+                    <span>Alphabet Inc. (GOOGL)</span>
+                    <button class="buyButton" data-stock="GOOGL">Comprar</button>
+                    <button class="sellButton" data-stock="GOOGL">Vender</button>
                 </li>
                 <li>
-                    <input type="checkbox" id="MSFT">
-                    <label for="MSFT">Microsoft Corporation (MSFT)</label>
+                    <span>Microsoft Corporation (MSFT)</span>
+                    <button class="buyButton" data-stock="MSFT">Comprar</button>
+                    <button class="sellButton" data-stock="MSFT">Vender</button>
                 </li>
                 <li>
-                    <input type="checkbox" id="AMZN">
-                    <label for="AMZN">Amazon.com, Inc. (AMZN)</label>
+                    <span>Amazon.com, Inc. (AMZN)</span>
+                    <button class="buyButton" data-stock="AMZN">Comprar</button>
+                    <button class="sellButton" data-stock="AMZN">Vender</button>
                 </li>
                 <li>
-                    <input type="checkbox" id="FB">
-                    <label for="FB">Facebook, Inc. (FB)</label>
+                    <span>Facebook, Inc. (FB)</span>
+                    <button class="buyButton" data-stock="FB">Comprar</button>
+                    <button class="sellButton" data-stock="FB">Vender</button>
                 </li>
                 <li>
-                    <input type="checkbox" id="TSLA">
-                    <label for="TSLA">Tesla, Inc. (TSLA)</label>
+                    <span>Tesla, Inc. (TSLA)</span>
+                    <button class="buyButton" data-stock="TSLA">Comprar</button>
+                    <button class="sellButton" data-stock="TSLA">Vender</button>
                 </li>
                 <li>
-                    <input type="checkbox" id="NFLX">
-                    <label for="NFLX">Netflix, Inc. (NFLX)</label>
+                    <span>Netflix, Inc. (NFLX)</span>
+                    <button class="buyButton" data-stock="NFLX">Comprar</button>
+                    <button class="sellButton" data-stock="NFLX">Vender</button>
                 </li>
                 <li>
-                    <input type="checkbox" id="DIS">
-                    <label for="DIS">The Walt Disney Company (DIS)</label>
+                    <span>The Walt Disney Company (DIS)</span>
+                    <button class="buyButton" data-stock="DIS">Comprar</button>
+                    <button class="sellButton" data-stock="DIS">Vender</button>
                 </li>
             </ul>
         </div>
@@ -54,16 +61,15 @@
             <ul id="portfolio"></ul>
         </div>
         <div class="controls">
-            <input type="text" id="stockName" placeholder="Nome da Ação">
-            <input type="number" id="stockPrice" placeholder="Preço">
+            <input type="text" id="stockName" placeholder="Nome da Ação" disabled>
+            <input type="number" id="stockPrice" placeholder="Preço" disabled>
             <input type="number" id="quantity" placeholder="Quantidade">
-            <button id="buyButton">Comprar</button>
-            <button id="sellButton">Vender</button>
+            <button id="buyPortfolioButton">Adicionar ao Portfólio</button>
+            <button id="sellPortfolioButton">Remover do Portfólio</button>
         </div>
         <div class="chart-container">
             <canvas id="chart"></canvas>
         </div>
     </div>
-    <script src="script.js"></script>
 </body>
 </html>
