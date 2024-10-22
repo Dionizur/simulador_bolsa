@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Ações</title>
+    <link rel="stylesheet" href="simulacao.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Simulação de Ações</h1>
+        <p>Compre e venda ações em tempo real!</p>
+    </header>
+
+    <div class="container">
+        <div class="stock-list">
+            <h2>Ações Disponíveis</h2>
+            <ul>
+                <li>
+                    AAPL - $150 <button class="buyButton" data-stock="AAPL">Comprar</button> <button class="sellButton" data-stock="AAPL">Vender</button>
+                </li>
+                <li>
+                    GOOGL - $2800 <button class="buyButton" data-stock="GOOGL">Comprar</button> <button class="sellButton" data-stock="GOOGL">Vender</button>
+                </li>
+                <li>
+                    MSFT - $300 <button class="buyButton" data-stock="MSFT">Comprar</button> <button class="sellButton" data-stock="MSFT">Vender</button>
+                </li>
+                <li>
+                    AMZN - $3500 <button class="buyButton" data-stock="AMZN">Comprar</button> <button class="sellButton" data-stock="AMZN">Vender</button>
+                </li>
+                <li>
+                    FB - $350 <button class="buyButton" data-stock="FB">Comprar</button> <button class="sellButton" data-stock="FB">Vender</button>
+                </li>
+                <li>
+                    TSLA - $800 <button class="buyButton" data-stock="TSLA">Comprar</button> <button class="sellButton" data-stock="TSLA">Vender</button>
+                </li>
+                <li>
+                    NFLX - $600 <button class="buyButton" data-stock="NFLX">Comprar</button> <button class="sellButton" data-stock="NFLX">Vender</button>
+                </li>
+                <li>
+                    DIS - $180 <button class="buyButton" data-stock="DIS">Comprar</button> <button class="sellButton" data-stock="DIS">Vender</button>
+                </li>
+                <li>
+                    NVDA - $220 <button class="buyButton" data-stock="NVDA">Comprar</button> <button class="sellButton" data-stock="NVDA">Vender</button>
+                </li>
+                <li>
+                    PYPL - $250 <button class="buyButton" data-stock="PYPL">Comprar</button> <button class="sellButton" data-stock="PYPL">Vender</button>
+                </li>
+                <li>
+                    AMD - $100 <button class="buyButton" data-stock="AMD">Comprar</button> <button class="sellButton" data-stock="AMD">Vender</button>
+                </li>
+                <li>
+                    BABA - $150 <button class="buyButton" data-stock="BABA">Comprar</button> <button class="sellButton" data-stock="BABA">Vender</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="portfolio">
+            <h2>Seu Portfólio</h2>
+            <ul id="portfolio"></ul>
+        </div>
+
+        <div class="controls">
+            <h2>Controle de Ações</h2>
+            <label for="stockName">Nome da Ação:</label>
+            <input type="text" id="stockName" readonly>
+            <label for="stockPrice">Preço da Ação:</label>
+            <input type="text" id="stockPrice" readonly>
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" min="1">
+            <button id="buyPortfolioButton">Comprar</button>
+            <button id="sellPortfolioButton">Vender</button>
+        </div>
+
+        <div class="chart-container">
+            <h2>Gráfico de Ações</h2>
+            <canvas id="chart"></canvas>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Simulação de Ações. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="simulacao.js"></script>
+</body>
+</html>
