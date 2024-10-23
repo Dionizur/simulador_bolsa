@@ -1,6 +1,25 @@
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
 }
 
 .container {
@@ -12,19 +31,32 @@ body {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.stock-list, .portfolio {
+.stock-list, .portfolio, .controls {
     margin-bottom: 20px;
 }
 
-.controls {
-    margin-top: 20px;
+h2 {
+    color: #333;
 }
 
-.chart-container {
-    margin-top: 40px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-#chart {
-    width: 100%;
-    height: 400px;
+li {
+    margin: 10px 0;
+}
+
+button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
 }

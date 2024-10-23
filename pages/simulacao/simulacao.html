@@ -1,75 +1,88 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Ações</title>
     <link rel="stylesheet" href="simulacao.css">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="simulacao.js"></script>
-    <title>Simulação de Bolsa de Valores</title>
 </head>
 <body>
+    <header>
+        <h1>Simulação de Ações</h1>
+        <p>Compre e venda ações em tempo real!</p>
+    </header>
+
     <div class="container">
-        <h1>Simulação de Bolsa de Valores</h1>
         <div class="stock-list">
-            <h2>Ações</h2>
-            <ul id="stocks">
+            <h2>Ações Disponíveis</h2>
+            <ul>
                 <li>
-                    <span>Apple Inc. (AAPL)</span>
-                    <button class="buyButton" data-stock="AAPL">Comprar</button>
-                    <button class="sellButton" data-stock="AAPL">Vender</button>
+                    AAPL - $150 <button class="buyButton" data-stock="AAPL">Comprar</button> <button class="sellButton" data-stock="AAPL">Vender</button>
                 </li>
                 <li>
-                    <span>Alphabet Inc. (GOOGL)</span>
-                    <button class="buyButton" data-stock="GOOGL">Comprar</button>
-                    <button class="sellButton" data-stock="GOOGL">Vender</button>
+                    GOOGL - $2800 <button class="buyButton" data-stock="GOOGL">Comprar</button> <button class="sellButton" data-stock="GOOGL">Vender</button>
                 </li>
                 <li>
-                    <span>Microsoft Corporation (MSFT)</span>
-                    <button class="buyButton" data-stock="MSFT">Comprar</button>
-                    <button class="sellButton" data-stock="MSFT">Vender</button>
+                    MSFT - $300 <button class="buyButton" data-stock="MSFT">Comprar</button> <button class="sellButton" data-stock="MSFT">Vender</button>
                 </li>
                 <li>
-                    <span>Amazon.com, Inc. (AMZN)</span>
-                    <button class="buyButton" data-stock="AMZN">Comprar</button>
-                    <button class="sellButton" data-stock="AMZN">Vender</button>
+                    AMZN - $3500 <button class="buyButton" data-stock="AMZN">Comprar</button> <button class="sellButton" data-stock="AMZN">Vender</button>
                 </li>
                 <li>
-                    <span>Facebook, Inc. (FB)</span>
-                    <button class="buyButton" data-stock="FB">Comprar</button>
-                    <button class="sellButton" data-stock="FB">Vender</button>
+                    FB - $350 <button class="buyButton" data-stock="FB">Comprar</button> <button class="sellButton" data-stock="FB">Vender</button>
                 </li>
                 <li>
-                    <span>Tesla, Inc. (TSLA)</span>
-                    <button class="buyButton" data-stock="TSLA">Comprar</button>
-                    <button class="sellButton" data-stock="TSLA">Vender</button>
+                    TSLA - $800 <button class="buyButton" data-stock="TSLA">Comprar</button> <button class="sellButton" data-stock="TSLA">Vender</button>
                 </li>
                 <li>
-                    <span>Netflix, Inc. (NFLX)</span>
-                    <button class="buyButton" data-stock="NFLX">Comprar</button>
-                    <button class="sellButton" data-stock="NFLX">Vender</button>
+                    NFLX - $600 <button class="buyButton" data-stock="NFLX">Comprar</button> <button class="sellButton" data-stock="NFLX">Vender</button>
                 </li>
                 <li>
-                    <span>The Walt Disney Company (DIS)</span>
-                    <button class="buyButton" data-stock="DIS">Comprar</button>
-                    <button class="sellButton" data-stock="DIS">Vender</button>
+                    DIS - $180 <button class="buyButton" data-stock="DIS">Comprar</button> <button class="sellButton" data-stock="DIS">Vender</button>
+                </li>
+                <li>
+                    NVDA - $220 <button class="buyButton" data-stock="NVDA">Comprar</button> <button class="sellButton" data-stock="NVDA">Vender</button>
+                </li>
+                <li>
+                    PYPL - $250 <button class="buyButton" data-stock="PYPL">Comprar</button> <button class="sellButton" data-stock="PYPL">Vender</button>
+                </li>
+                <li>
+                    AMD - $100 <button class="buyButton" data-stock="AMD">Comprar</button> <button class="sellButton" data-stock="AMD">Vender</button>
+                </li>
+                <li>
+                    BABA - $150 <button class="buyButton" data-stock="BABA">Comprar</button> <button class="sellButton" data-stock="BABA">Vender</button>
                 </li>
             </ul>
         </div>
+
         <div class="portfolio">
             <h2>Seu Portfólio</h2>
             <ul id="portfolio"></ul>
         </div>
+
         <div class="controls">
-            <input type="text" id="stockName" placeholder="Nome da Ação" disabled>
-            <input type="number" id="stockPrice" placeholder="Preço" disabled>
-            <input type="number" id="quantity" placeholder="Quantidade">
-            <button id="buyPortfolioButton">Adicionar ao Portfólio</button>
-            <button id="sellPortfolioButton">Remover do Portfólio</button>
+            <h2>Controle de Ações</h2>
+            <label for="stockName">Nome da Ação:</label>
+            <input type="text" id="stockName" readonly>
+            <label for="stockPrice">Preço da Ação:</label>
+            <input type="text" id="stockPrice" readonly>
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" min="1">
+            <button id="buyPortfolioButton">Comprar</button>
+            <button id="sellPortfolioButton">Vender</button>
         </div>
+
         <div class="chart-container">
+            <h2>Gráfico de Ações</h2>
             <canvas id="chart"></canvas>
         </div>
     </div>
+
+    <footer>
+        <p>&copy; 2023 Simulação de Ações. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="simulacao.js"></script>
 </body>
 </html>
