@@ -73,9 +73,23 @@
             <button id="sellPortfolioButton">Vender</button>
         </div>
 
+        <div class="create-stock">
+            <h2>Criar Nova Ação</h2>
+            <label for=" newStockName">Nome da Ação:</label>
+            <input type="text" id="newStockName">
+            <label for="newStockPrice">Preço da Ação:</label>
+            <input type="number" id="newStockPrice" min="1">
+            <button id="createStockButton">Criar Ação</button>
+        </div>
+
         <div class="chart-container">
             <h2>Gráfico de Ações</h2>
             <canvas id="chart"></canvas>
+        </div>
+
+        <div class="custom-chart-container">
+            <h2>Gráfico de Ações Criadas</h2>
+            <canvas id="customChart"></canvas>
         </div>
     </div>
 

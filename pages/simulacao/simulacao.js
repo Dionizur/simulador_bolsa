@@ -119,3 +119,84 @@ document.addEventListener('DOMContentLoaded', () => {
         chart.update();
     }
 });
+
+document.querySelectorAll('.buyButton').forEach(button => {
+    button.addEventListener('click', () => {
+        const stockName = button.dataset.stock;
+        const stockPrice = stockPrices[stockName];
+        stockNameInput.value = stockName; // Preenche o nome da ação
+        stockPriceInput.value = stockPrice; // Preenche o preço da ação
+        quantityInput.focus(); // Foca no campo de quantidade para facilitar a entrada
+    });
+});
+
+document.querySelectorAll('.sellButton').forEach(button => {
+    button.addEventListener('click', () => {
+        const stockName = button.dataset.stock;
+        stockNameInput.value = stockName; // Preenche o nome da ação
+        quantityInput.value = ''; // Limpa o campo de quantidade
+        quantityInput.focus(); // Foca no campo de quantidade para facilitar a entrada
+    });
+});
+
+const customStocks = []; // Array para armazenar ações criadas
+const customPrices = []; // Array para armazenar preços das ações criadas
+
+// Inicialização do gráfico de ações criadas (agora como gráfico de linhas)
+const ctx = document.getElementById('customChart').getContext('2d');
+const customChart = new Chart(ctx, {
+    type: 'line', // Mudando para gráfico de linhas
+    data: {
+        labels: customStocks,
+        datasets: [{
+            label: 'Preço das Ações Criadas',
+            data: customPrices,
+            backgroundColor: 'rgba(75, 192, 192, 0.2)',
+            borderColor: 'rgba(75, 192, 192, 1)',
+            borderWidth: 1,
+            fill: true // Preencher a área sob a linha
+        }]
+    },
+    options: {
+        scales: {
+            y: {
+                beginAtZero: true
+            }
+        }
+    }
+});
+// Função para adicionar uma nova ação à lista
+function addStockToList(stockName, stockPrice) {
+    const stockList = document.querySelector('.stock-list ul');
+    const newStockItem = document.createElement('li');
+    newStockItem.innerHTML = `${stockName} - $${stockPrice} <button class="buyButton" data-stock="${stockName}">Comprar</button> <button class="sellButton" data-stock="${stockName}">Vender</button>`;
+    stockList.appendChild(newStockItem);
+}
+
+// Evento para o botão "Criar Ação"
+document.getElementById('createStockButton').addEventListener('click', function() {
+    const newStockName = document.getElementById('newStockName').value.trim();
+    const newStockPrice = document.getElementById('newStockPrice').value.trim();
+
+    // Verifica se os campos estão preenchidos corretamente
+    if (newStockName === '' || newStockPrice === '' || isNaN(newStockPrice) || newStockPrice <= 0) {
+        alert('Por favor, insira um nome e um preço válidos para a ação.');
+        return;
+    }
+
+    // Adiciona a nova ação à lista
+    addStockToList(newStockName, parseFloat(newStockPrice).toFixed(2));
+
+    // Adiciona a nova ação e preço ao gráfico
+    customStocks.push(newStockName); // Adiciona o nome da nova ação
+    customPrices.push(parseFloat(newStockPrice).toFixed(2)); // Adiciona o preço da nova ação
+
+    // Atualiza o gráfico
+    customChart.data.labels = customStocks; // Atualiza os rótulos do gráfico
+    customChart.data.datasets[0].data = customPrices; // Atualiza os dados do gráfico
+    customChart.update(); // Atualiza o gráfico
+
+    // Limpa os campos de entrada
+    document.getElementById('newStockName').value = '';
+    document.getElementById('newStockPrice').value = '';
+});
