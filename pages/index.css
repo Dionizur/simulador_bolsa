@@ -78,7 +78,7 @@ header .btn:hover {
 }
 
 .hero {
-    background-image: url(./imagens/Sistema-de-gestao-de-investimentos-leva-a-alta-performance.jpg);
+    background-image: url(./imagens/teste2.webp);
     /* background-color:rgb(42, 131, 54);*/  
     background-size: cover;
     background-position: 0% 100%;
@@ -87,7 +87,7 @@ header .btn:hover {
     justify-content: center;
     align-items: center;
     color: #ffffff;
-    opacity: 0.5;
+    opacity: 1;
 }
 
 .hero h1 {
