@@ -9,36 +9,58 @@
 
 <body>
     <form class="form">
-        <p class="title">Register </p>
-        <p class="message">Signup now and get full access to our app. </p>
+        <p class="title">Login Little bag </p>
+        <p class="message">cadastre-se para uma melhor experiencia</p>
             <div class="flex">
             <label>
-                <input class="input" type="text" placeholder="" required="">
-                <span>Firstname</span>
+                <input class="input" type="text" id="nome">
+                <span>Nome  </span>
             </label>
     
             <label>
-                <input class="input" type="text" placeholder="" required="">
-                <span>Lastname</span>
+                <input class="input" type="text" id="sobnome">
+                <span>Sobrenome</span>
             </label>
         </div>  
                 
         <label>
-            <input class="input" type="email" placeholder="" required="">
+            <input class="input" type="email" id="email">
             <span>Email</span>
         </label> 
             
         <label>
-            <input class="input" type="password" placeholder="" required="">
-            <span>Password</span>
+            <input class="input" type="password" id="senha">
+            <span>senha</span>
         </label>
-        <label>
-            <input class="input" type="password" placeholder="" required="">
-            <span>Confirm password</span>
-        </label>
-        <button class="submit">Submit</button>
-        <p class="signin">Already have an acount ? <a href="#">Signin</a> </p>
+        <button class="submit">criar conta</button>
+        <p class="signin">ja tem conta? <a href="#">Entre</a> </p>
     </form>
+
+    <script>
+        document.querySelector('.form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const firstName = document.getElementById('nome').value.trim();
+            const lastName = document.getElementById('sobnome').value.trim();
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('senha').value.trim();
+
+            const errorMessage = document.getElementById('errorMessage');
+
+            if (!firstName || !lastName || !email || !password) {
+                errorMessage.textContent = 'Por favor, preencha todos os campos.';
+                return;
+            }
+
+            // Exibir mensagem de sucesso
+            alert('Cadastro feito com sucesso!');
+
+            // Redirecionar após 2 segundos
+            setTimeout(function() {
+                window.location.href="../";
+            }, 2000);
+        });
+    </script>
     
 </body>
 </html>
