@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login no LB</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+
+<body>
+    <form class="form">
+        <p class="title">Login Little bag </p>
+        <p class="message">entre na sua conta de novo</p>
+                
+        <label>
+            <input class="input" type="email" id="email">
+            <span>Email</span>
+        </label> 
+            
+        <label>
+            <input class="input" type="password" id="senha">
+            <span>senha</span>
+        </label>
+        <button class="submit">criar conta</button>
+        <p class="signin">bem-vindo de volta!</p>
+    </form>
+
+    <script>
+        document.querySelector('.form').addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const email = document.getElementById('email').value.trim();
+            const password = document.getElementById('senha').value.trim();
+
+            const errorMessage = document.getElementById('errorMessage');
+
+            if ( !email || !password) {
+                errorMessage.textContent = 'Por favor, preencha todos os campos.';
+                return;
+            }
+
+            // Exibir mensagem de sucesso
+            alert('Cadastro feito com sucesso!');
+
+            // Redirecionar após 2 segundos
+            setTimeout(function() {
+                window.location.href="../../index.html";
+            }, 1000);
+        });
+    </script>
+    
+</body>
+</html>
