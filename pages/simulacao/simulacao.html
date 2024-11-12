@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulação de Ações</title>
+    <link rel="stylesheet" href="simulacao.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Little Bag Investimentos</h1>
+        <h3>Simulação de Ações</h3>
+        <p>Compre e venda ações em tempo real!</p>
+    </header>
+
+    <div class="container">
+        <div class="stock-list">
+            <h2>Ações Disponíveis</h2>
+            <ul>
+                <li>
+                    AAPL - <span class="price">$150</span> <button class="buyButton" data-stock="AAPL">Comprar</button> <button class="sellButton" data-stock="AAPL">Vender</button>
+                </li>
+                <li>
+                    GOOGL - <span class="price">$2800</span> <button class="buyButton" data-stock="GOOGL">Comprar</button> <button class="sellButton" data-stock="GOOGL">Vender</button>
+                </li>
+                <li>
+                    MSFT - <span class="price">$300</span> <button class="buyButton" data-stock="MSFT">Comprar</button> <button class="sellButton" data-stock="MSFT">Vender</button>
+                </li>
+                <li>
+                    AMZN - <span class="price">$3500</span> <button class="buyButton" data-stock="AMZN">Comprar</button> <button class="sellButton" data-stock="AMZN">Vender</button>
+                </li>
+                <li>
+                    FB - <span class="price">$350</span> <button class="buyButton" data-stock="FB">Comprar</button> <button class="sellButton" data-stock="FB">Vender</button>
+                </li>
+                <li>
+                    TSLA - <span class="price">$800</span> <button class="buyButton" data-stock="TSLA">Comprar</button> <button class="sellButton" data-stock="TSLA">Vender</button>
+                </li>
+                <li>
+                    NFLX - <span class="price">$600</span> <button class="buyButton" data-stock="NFLX">Comprar</button> <button class="sellButton" data-stock="NFLX">Vender</button>
+                </li>
+                <li>
+                    DIS - <span class="price">$180</span> <button class="buyButton" data-stock="DIS">Comprar</button> <button class="sellButton" data-stock="DIS">Vender</button>
+                </li>
+                <li>
+                    NVDA - <span class="price">$220</span> <button class="buyButton" data-stock="NVDA">Comprar</button> <button class="sellButton" data-stock="NVDA">Vender</button>
+                </li>
+                <li>
+                    PYPL - <span class="price">$250</span> <button class="buyButton" data-stock="PYPL">Comprar</button> <button class="sellButton" data-stock="PYPL">Vender</button>
+                </li>
+                <li>
+                    AMD - <span class="price">$100</span> <button class="buyButton" data-stock="AMD">Comprar</button> <button class="sellButton" data-stock="AMD">Vender</button>
+                </li>
+                <li>
+                    BABA - <span class="price">$150</span> <button class="buyButton" data-stock="BABA">Comprar</button> <button class="sellButton" data-stock="BABA">Vender</button>
+                </li>
+            </ul>
+        </div>
+
+        <div class="portfolio">
+            <h2>Seu Portfólio</h2>
+            <ul id="portfolio"></ul>
+        </div>
+
+        <div class="controls">
+            <h2>Controle de Ações</h2>
+            <label for="stockName">Nome da Ação:</label>
+            <input type="text" id="stockName" readonly>
+            <label for="stockPrice">Preço da Ação:</label>
+            <input type="text" id="stockPrice" readonly>
+            <label for="quantity">Quantidade:</label>
+            <input type="number" id="quantity" min="1">
+            <button id="buyPortfolioButton">Comprar</button>
+            <button id="sellPortfolioButton">Vender</button>
+        </div>
+
+        <div class="create-stock">
+            <h2>Criar Nova Ação</h2>
+            <label for=" newStockName">Nome da Ação:</label>
+            <input type="text" id="newStockName">
+            <label for="newStockPrice">Preço da Ação:</label>
+            <input type="number" id="newStockPrice" min="1">
+            <button id="createStockButton">Criar Ação</button>
+        </div>
+
+        <div class="chart-container">
+            <h2>Gráfico de Ações</h2>
+            <canvas id="chart"></canvas>
+        </div>
+
+        <div class="custom-chart-container">
+            <h2>Gráfico de Ações Criadas</h2>
+            <canvas id="customChart"></canvas>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 LB Investimentos. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="simulacao.js"></script>
+</body>
+</html
