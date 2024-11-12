@@ -1,968 +1,1178 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <link rel="stylesheet" href="aprenda.css">
-   <title>Simulador de Bolsa</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="aprenda.css">
+    <title>Aprenda sobre a bolsa</title>
 </head>
+
 <body>
-   
-           <div id="learn" class="screen">
-               <h1>Aprenda sobre a Bolsa</h1>
-
-               <h4>Como Começar a Investir?</h4>
-
-                <p>1-Abra uma conta em uma corretora: Escolha uma corretora de valores confiável e autorizada pela CVM (Comissão de Valores Mobiliários). As corretoras são as intermediárias entre você e a bolsa, responsáveis por executar suas ordens de compra e venda.</p>
-
-                <p>2-Defina seu perfil de investidor: É fundamental entender seu perfil de risco e seus objetivos financeiros. Investidores mais conservadores preferem ativos com menor volatilidade, enquanto investidores mais agressivos podem buscar ativos com maior potencial de retorno, mas também com maior risco.</p>
-                 
-                <p>3-Estude o mercado: Acompanhe as notícias do mercado financeiro, analise as empresas e setores que te interessam. Existem diversas ferramentas e plataformas que podem te ajudar nessa tarefa, como plataformas de análise gráfica, notícias financeiras e relatórios de empresas.</p>
-
-                <p>4-Comece com um valor acessível: Não é necessário investir um grande valor para começar. A maioria das corretoras não exige um valor mínimo para abrir conta.</p>
-
-                <p>5-Diversifique sua carteira: Não coloque todos os seus ovos em uma única cesta. Distribua seus investimentos em diferentes ativos, setores e regiões geográficas para reduzir o risco.</p>
-                 
-                <h4>Tipos de Investimentos na Bolsa:</h4>
-                
-                <p>Ações: Representam a propriedade de uma fração de uma empresa. Ao comprar ações, você se torna um sócio da empresa e tem direito a uma parte dos seus lucros.</p>
-
-                <p>Fundos de Investimento: Fundos que reúnem o dinheiro de vários investidores para aplicar em diversos ativos, como ações, títulos de renda fixa e outros.</p>
-
-                <p>BDRs (Brazilian Depositary Receipts): Títulos que representam ações de empresas estrangeiras negociadas na bolsa brasileira.</p>
-                
-                <p>ETFs (Exchange-Traded Funds): Fundos que acompanham um índice de mercado, como o Ibovespa.</p>
-                 
-                <p>Fundos Imobiliários (FIIs): Fundos que investem em empreendimentos imobiliários, como shoppings, galpões logísticos e edifícios comerciais.</p>
-
-                <h4>Quais os Riscos?</h4>
-
-                <p>Volatilidade do mercado: O valor das ações pode variar bastante em curto prazo, influenciado por diversos fatores, como notícias corporativas, resultados econômicos e eventos geopolíticos.</p>
-
-                <p>Risco de empresa: A empresa na qual você investiu pode ter resultados ruins, o que pode levar à queda do valor de suas ações.</p>
-                
-                <p>Risco de mercado: Fatores como crises econômicas e políticas podem afetar o mercado como um todo.</p>
-                 
-                <h4>Dicas Importantes:</h4>
-
-                <p>Invista a longo prazo: A bolsa de valores é um investimento de longo prazo. Evite tomar decisões impulsivas com base em oscilações de curto prazo.</p>
-
-                <p>Busque conhecimento: Leia sobre investimentos, acompanhe notícias do mercado e, se necessário, contrate um assessor de investimentos.</p>
-
-                <p>Comece devagar: Não invista todo o seu dinheiro de uma vez. Aumente seus investimentos gradualmente.</p>
-
-                <p>Tenha paciência: Os resultados na bolsa de valores não são imediatos. É importante ter paciência e manter a disciplina.</p>
-
-                <p>Diversifique sua carteira: A diversificação é fundamental para reduzir o risco. Distribua seus investimentos em diferentes ativos, setores e regiões geográficas.</p>
-
-                <p>Acompanhe seus investimentos: Acompanhe regularmente seus investimentos para identificar oportunidades e tomar as decisões mais adequadas.</p>
-                
-             
-               <h2>O que é a bolsa de valores?</h2>
-
-
-               <p>A bolsa de valores é um mercado financeiro onde se realiza a compra e venda de ativos, como ações, títulos e derivativos. Ela serve como um mecanismo fundamental para a captação de recursos por empresas e para a negociação de investimentos por indivíduos e instituições.</p>
-             
-               <h2>Estrutura da Bolsa de Valores</h2>
-             
-               <h3>Mercado Primário e Secundário</h3>
-              
-               <h2>Mercado Primário</h2>
-
-
-               <p>O mercado primário é onde novos títulos, como ações e obrigações, são emitidos e vendidos pela primeira vez. Nesse mercado, os emissores (normalmente empresas ou governos) levantam capital diretamente dos investidores. </p>
-             
-               <p>1ºEmissão de Títulos: No mercado primário, as empresas lançam novas ações ou títulos para financiar suas operações, projetos ou expansões. A venda é realizada através de uma oferta pública inicial (IPO) ou uma oferta de títulos.</p>               
-              
-               <p>2ºCapital Fresco: O dinheiro gerado pela venda de ações ou títulos no mercado primário vai diretamente para o emissor, permitindo que ele use esses recursos para seus objetivos financeiros.</p>
-             
-               <p>3ºIntermediários: Normalmente, bancos de investimento e corretoras atuam como intermediários na emissão e venda de títulos, ajudando a determinar o preço e a estrutura da oferta.</p>
-             
-               <p>4ºTransparência e Regulação: As emissões no mercado primário são frequentemente sujeitas a regulamentos rigorosos, incluindo a divulgação de informações financeiras e a necessidade de aprovações regulatórias.</p>
-             
-               <p>Exemplo</p>
-              
-               <p>Quando uma empresa decide abrir seu capital e realiza um IPO, as ações são vendidas pela primeira vez ao público no mercado primário. O capital arrecadado é utilizado para crescimento ou pagamento de dívidas.</p>
-              
-               <h2>Mercado Secundário</h2>
-             
-               <p>O mercado secundário é onde os títulos previamente emitidos são comprados e vendidos entre investidores. Nesse mercado, as transações não envolvem diretamente o emissor, mas sim a troca de títulos entre os investidores.</p>
-              
-               <p>Preços e Cotações: Os preços das ações e outros ativos são atualizados em tempo real, refletindo as condições do mercado. Essa informação é crucial para investidores tomarem decisões informadas.</p>
-              
-               <p>1ºLiquidez: O mercado secundário proporciona liquidez aos investidores, permitindo que eles comprem ou vendam títulos rapidamente a qualquer momento após a emissão inicial.</p>
-              
-               <p>2ºDeterminação de Preços: Os preços das ações e títulos no mercado secundário são determinados pela oferta e demanda. Fatores como desempenho financeiro da empresa, condições de mercado e expectativas econômicas influenciam esses preços.</p>
-              
-               <p>3ºDiversidade de Investidores: Neste mercado, podem participar investidores individuais, institucionais e profissionais, todos buscando oportunidades de investimento e gerenciamento de portfólio.</p>
-                             
-               <p>4ºMenos Regulação Direta: Embora ainda haja regulamentos, as transações no mercado secundário geralmente são menos rigorosamente reguladas em comparação ao mercado primário, pois não envolvem a emissão de novos títulos.</p>
-              
-               <p>Exemplo</p> 
-
-
-               <p>Após uma empresa ter realizado seu IPO, suas ações são negociadas no mercado secundário. Um investidor que comprou ações durante o IPO pode vender suas ações para outro investidor a um preço que pode ser maior ou menor do que o preço de emissão, dependendo das condições de mercado.</p>
-              
-               <h2>Instituiçõe envolvida</h2>
-             
-               <p>As instituições financeiras desempenham um papel crucial no funcionamento dos mercados financeiros, facilitando a intermediação entre investidores e emissores de títulos, além de garantir a estabilidade e a eficiência do sistema. Abaixo estão as principais instituições envolvidas, suas funções e características.</p>
-             
-               <h2>1ºBancos Comerciais</h2>
-              
-               <p>Função</p>
-              
-               <p>Os bancos comerciais são instituições que aceitam depósitos e oferecem uma variedade de serviços financeiros, incluindo contas correntes, empréstimos e financiamentos. Eles atuam como intermediários entre aqueles que têm capital disponível (depositantes) e aqueles que precisam de recursos (tomadores de empréstimos).</p>
-
-
-               <h3>Características</h3>
-
-
-               <p>Captação de Recursos: Os bancos captam recursos por meio de depósitos dos clientes, que são utilizados para conceder empréstimos.</p>    
-
-
-               <p>Serviços de Pagamento: Facilitam transações financeiras através de cheques, cartões de crédito e transferências eletrônicas.</p>
-              
-               <p>Assessoria: Oferecem serviços de consultoria financeira e gestão de ativos.</p>
-              
-               <h2>2ºBancos de Investimento</h2>
-
-
-               <p>Função</p>
-
-
-               <p>Os bancos de investimento são especializados em serviços relacionados à emissão de títulos, fusões e aquisições, e assessoria financeira. Eles não aceitam depósitos, focando principalmente em serviços para empresas e investidores institucionais.</p>
-
-
-               <h3>Características</h3>
-
-
-               <p>1ºSubscrição de Títulos: Auxiliam empresas a emitir ações e títulos, atuando como subscritores que garantem a venda dos títulos.</p>
-
-
-               <p>2ºFusões e Aquisições: Prestam serviços de consultoria em operações de fusão, aquisição e reestruturação corporativa.</p>
-
-
-               <p>3ºMercado de Capitais: Facilitam a negociação de ações e outros ativos no mercado secundário.</p>
-
-
-               <h2>Corretoras de Valores</h2>
-
-
-               <p>Função</p>
-
-
-               <p>As corretoras atuam como intermediárias na compra e venda de títulos, como ações, títulos públicos e commodities. Elas conectam investidores aos mercados financeiros.</p>
-
-
-               <h3>Características</h3>
-
-
-               <p>1ºExecução de Ordens: Recebem ordens de compra e venda de clientes e executam essas transações no mercado.</p>
-
-
-               <p>2ºAssessoria: Oferecem recomendações e análises de mercado, ajudando os investidores a tomar decisões informadas.</p>
-
-
-               <p>3ºAcesso ao Mercado: Fornecem plataformas de negociação que permitem aos investidores acessar mercados financeiros de forma direta.</p>
-
-
-               <h2>Bolsas de Valores</h2>
-
-
-               <p>Função</p>
-
-
-               <p>As bolsas de valores são plataformas organizadas onde ações, títulos e outros ativos são comprados e vendidos. Elas garantem a transparência e a eficiência das transações.</p>
-
-
-               <h3>Características</h3>
-
-
-               <p>1ºListagem de Títulos: Empresas podem listar suas ações na bolsa para facilitar a negociação.</p>
-
-
-               <p>2ºRegulação e Supervisão: As bolsas atuam sob a supervisão de órgãos reguladores, garantindo que as transações sejam justas e transparentes.</p>
-
-
-               <p>3ºIndicadores de Mercado: Fornecem índices que ajudam a monitorar o desempenho do mercado, como o IBOVESPA no Brasil.</p>
-
-
-               <h2>Agências de Classificação de Risco</h2>
-
-
-               <p>Função</p>
-
-
-               <p>As agências de classificação de risco avaliam a qualidade de crédito de emissores de títulos e de seus títulos, ajudando investidores a entender os riscos associados a um investimento.</p>
-
-
-               <h3>Características</h3>
-
-
-               <p>1ºClassificações de Crédito: Fornecem notas (ratings) que indicam a capacidade do emissor de cumprir suas obrigações financeiras.</p>
-
-
-               <p>2ºTransparência: Ajudam a aumentar a transparência no mercado, permitindo que investidores tomem decisões mais informadas.</p>
-
-
-               <p>3ºInfluência no Custo do Capital: Uma classificação elevada pode resultar em menores custos de financiamento para as empresas.</p>
-
-
-               <h2>Reguladores Financeiros</h2>
-
-
-               <p>Função</p>
-
-
-               <p>Os reguladores financeiros, como a Comissão de Valores Mobiliários (CVM) no Brasil, são responsáveis pela supervisão e regulamentação dos mercados financeiros para garantir a proteção dos investidores e a integridade do sistema financeiro.</p>
-
-
-               <h3>Características</h3>
-
-
-               <p>1ºSupervisão: Monitoram as atividades das instituições financeiras para prevenir fraudes e garantir a conformidade com as leis.</p>
-
-
-               <p>2ºProteção ao Investidor: Implementam regras para proteger os investidores e garantir que tenham acesso a informações claras.</p>
-
-
-               <p>3ºEstabilidade do Sistema: Trabalham para garantir a estabilidade e a confiança no sistema financeiro.</p>
-
-
-               <h2>Fundos de Investimento</h2>
-
-
-               <p>Função</p>
-
-
-               <p>Os fundos de investimento são veículos que permitem a um grupo de investidores aplicar seus recursos em um portfólio diversificado de ativos, gerido por profissionais.</p>
-
-
-               <h3>Características</h3>
-
-
-               <p>1ºDiversificação: Oferecem uma maneira de diversificar investimentos, reduzindo riscos associados a ativos individuais.</p>
-          
-               <p>2ºGestão Profissional: Administrados por gestores que tomam decisões de investimento com base em análises de mercado.</p>
-
-
-               <p>3ºAcesso a Oportunidades: Permitem que investidores individuais acessem ativos que poderiam ser inacessíveis para eles de outra forma.</p>
-
-
-               <h2>Plataforma de Negociações</h2>
-
-
-               <h2>Tipos de Plataformas de Negociação</h2>
-
-
-               <p>1ºPlataformas de Acesso Direto ao Mercado (DMA)</p>
-          
-               <p>Definição: Permitem que os traders enviem ordens diretamente ao mercado sem a necessidade de intermediários.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Execução rápida de ordens.</p>
-          
-               <p>Acesso a dados em tempo real.</p>
-
-
-               <p>Ideal para traders de alta frequência.</p>
-
-
-               <h2>Plataformas de Corretoras</h2>
-
-
-               <p>Definição: Oferecidas por corretoras, essas plataformas permitem que os investidores negociem uma variedade de ativos.</p>
-          
-               <h3>Características:</h3>
-
-
-               <p>Interface amigável para iniciantes.</p>
-
-
-               <p>Suporte ao cliente.</p>
-
-
-               <p>Ferramentas de pesquisa e análise.</p>
-
-
-               <h2>Plataformas de Trading de Criptomoedas</h2>
-          
-               <p>Definição: Focadas na negociação de criptomoedas, essas plataformas oferecem acesso a uma variedade de tokens e moedas digitais.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Possibilidade de negociação em pares de criptomoedas.</p>
-
-
-               <p>Funcionalidades de segurança, como autenticação de dois fatores.</p>
-
-
-               <p>Interfaces intuitivas para facilitar a negociação.</p>
-          
-               <h2>Plataformas de Trading Móvel</h2>
-
-
-               <p>Definição: Aplicativos que permitem a negociação a partir de dispositivos móveis.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Acesso a mercados em qualquer lugar e a qualquer hora.</p>
-
-
-               <p>Notificações em tempo real sobre movimentos de preços.</p>
-
-
-               <p>Funcionalidades de análise técnica e gráficos.</p>
-          
-               <h2>Funcionalidades Comuns</h2>
-
-
-               <h2>Gráficos e Ferramentas de Análise</h2>
-
-
-               <p>1ºGráficos interativos com diversas opções de indicadores técnicos.</p>
-
-
-               <p>2ºFerramentas para traçar tendências e padrões de preço.</p>
-
-
-               <p>3ºAnálises fundamentalistas e relatórios de mercado.</p>
-
-
-               <h2>Execução de Ordens</h2>
-
-
-               <p>Diferentes tipos de ordens, como ordens de mercado, ordens limitadas e ordens stop.</p>
-          
-               <p>Opções para programar ordens (ordens condicionais).</p>
-
-
-               <p>Relatórios de execução e histórico de transações.</p>
-
-
-               <h2>Recursos Educacionais</h2>
-
-
-               <p>Tutoriais e webinars para ajudar os investidores a entenderem o funcionamento da plataforma.</p>
-
-
-               <p>Artigos e análises de mercado que ajudam na tomada de decisões.</p>
-          
-               <p>Simuladores de negociação para prática sem riscos.</p>
-
-
-               <h2>Segurança</h2>
-
-
-               <p>Medidas de segurança, como criptografia e autenticação de dois fatores.</p>
-
-
-               <p>Políticas de proteção contra fraudes.</p>
-
-
-               <p>Certificações de segurança e conformidade regulatória.</p>
-          
-               <h2>Suporte ao Cliente</h2>
-          
-               <p>Atendimento ao cliente por diversos canais (chat, e-mail, telefone).</p>
-
-
-               <p>Seções de perguntas frequentes (FAQ) e recursos de autoajuda.</p>
-
-
-               <p>Assistência em questões técnicas e operacionais.</p>
-          
-               <h2>Considerações na Escolha de uma Plataforma</h2>
-
-
-               <h2>Taxas e Comissões</h2>
-
-
-               <p>Avaliar as comissões de negociação e taxas associadas ao uso da plataforma.</p>
-
-
-               <p>Comparar custos com outras plataformas e corretoras.</p>
-              
-               <h2>Usabilidade</h2>
-
-
-               <p>Interface intuitiva e fácil de navegar.</p>
-
-
-               <p>Acessibilidade em dispositivos móveis e desktops.</p>
-          
-               <p>Personalização de layouts e ferramentas.</p>
-
-
-               <h2>Variedade de Ativos</h2>
-
-
-               <p>A plataforma deve oferecer acesso a uma ampla gama de ativos, dependendo das preferências do investidor.</p>
-
-
-               <p>Verificar se a plataforma cobre mercados locais e internacionais.</p>
-
-
-               <h2>Recursos Adicionais</h2>
-
-
-               <p>Ferramentas avançadas, como algoritmos de negociação e análises de risco.</p>
-          
-               <p>Integração com outras ferramentas e plataformas.</p>
-
-
-               <h2>Exemplos de Plataformas de Negociação</h2>
-
-
-               <p>1°MetaTrader 4/5</p>
-
-
-               <p>Popular entre traders de forex e CFDs, com ferramentas avançadas de análise técnica.</p>
-
-
-               <p>Permite a criação de robôs de negociação (Expert Advisors).</p>
-
-
-               <p>2°Thinkorswim (TD Ameritrade)</p>
-
-
-               <p>Plataforma robusta que oferece uma ampla gama de ferramentas de análise e recursos educacionais.</p>
-
-
-               <p>Adequada tanto para iniciantes quanto para traders experientes.</p>
-
-
-               <h2>Binance</h2>
-
-
-               <p>Uma das maiores plataformas de criptomoedas, com acesso a uma vasta gama de tokens.</p>
-
-
-               <p>Oferece recursos de negociação avançada, como margem e futuros.</p>
-
-
-               <h2>Interactive Brokers</h2>
-
-
-               <p>Conhecida por suas baixas comissões e acesso a mercados globais.</p>
-
-
-               <p>Plataforma adequada para investidores institucionais e traders ativos.</p>
-
-
-               <h2>Indíce de Mercado</h2>
-              
-               <h2>O que é um Índice de Mercado?</h2>
-
-
-               <p>Os índices de mercado são indicadores que medem o desempenho de um grupo específico de ações ou ativos, servindo como barômetros para avaliar a saúde geral de um mercado financeiro ou de um setor específico. Eles são amplamente utilizados por investidores e analistas para entender tendências de mercado e para tomar decisões de investimento. Aqui está uma visão detalhada sobre o que são índices de mercado, como funcionam e alguns exemplos populares.</p>
-
-
-               <h2>Como Funcionam os Índices de Mercado?</h2>
-
-
-               <p>1°Cálculo: Os índices são geralmente calculados com base no preço das ações das empresas que o compõem. A fórmula de cálculo pode variar, mas os métodos mais comuns são:</p>
-
-
-               <p>Média Aritmética: Onde os preços das ações são somados e divididos pelo número de ações no índice.</p>
-
-
-               <p>Média Ponderada: Onde as ações são ponderadas com base de seu valor de mercado, dando mais influência a empresas maiores.</p>
-
-
-               <p>Valor de Mercado: Alguns índices são baseados no valor total de mercado das empresas, ponderando suas ações em circulação.</p>
-
-
-               <p>2°Revisão Periódica: Os índices são revisados regularmente para refletir mudanças no mercado. Isso pode incluir a adição ou remoção de empresas com base em critérios específicos, como capitalização de mercado ou liquidez.</p>
-
-
-               <p>3°Divulgação: Os índices são divulgados regularmente, frequentemente em tempo real, e podem ser seguidos em plataformas financeiras, noticiários e sites de corretoras.</p>
-
-
-               <h2>Exemplos de Índices de Mercado</h2>
-
-
-               <p>1° exemplo: Índice Bovespa (IBOV)</p>
-
-
-               <p>Descrição: Principal índice da bolsa de valores brasileira (B3), que mede o desempenho das ações mais negociadas.</p>
-
-
-               <p>Composição: Inclui ações de empresas que possuem alta liquidez e representam setores variados da economia.</p>
-
-
-               <p>2°S&P 500</p>
-
-
-               <p>Descrição: Um dos índices mais amplamente seguidos do mercado norte-americano, composto por 500 das maiores empresas listadas nas bolsas dos EUA.</p>
-
-
-               <p>Importância: Considerado um indicador chave da saúde econômica dos EUA.</p>
-
-
-               <p>3°Dow Jones Industrial Average (DJIA)</p>
-
-
-               <p>Descrição: Um dos índices mais antigos e conhecidos, composto por 30 grandes empresas industriais nos EUA.</p>
-
-
-               <p>Cálculo: Baseado na média aritmética dos preços das ações, ponderada pelo preço das ações individuais.</p>
-
-
-               <p>4°NASDAQ Composite</p>
-
-
-               <p>Descrição: Um índice que inclui todas as ações listadas na bolsa de valores NASDAQ, com forte ênfase em tecnologia e inovação.</p>
-
-
-               <p>Relevância: Frequentemente usado para medir o desempenho do setor de tecnologia.</p>
-
-
-               <p>5°FTSE 100</p>
-
-
-               <p>Descrição: Índice das 100 maiores empresas listadas na Bolsa de Valores de Londres.</p>
-
-
-               <p>Importância: Um indicador da saúde econômica do Reino Unido.</p>
-
-
-               <h2>Importância dos Índices de Mercado</h2>
-
-
-               <p>Benchmarking: Os investidores usam índices como referência para comparar o desempenho de seus investimentos e fundos de investimento.</p>
-
-
-               <p>Análise de Tendências: Acompanhando o desempenho dos índices, os investidores podem identificar tendências de mercado e tomar decisões informadas.</p>
-
-
-               <p>Gestão de Risco: A análise de índices ajuda na avaliação do risco de investimentos em comparação com o desempenho do mercado em geral.</p>
-
-
-               <h2>Infraestrutura do Mercado</h2>
-
-
-               <p>A infraestrutura de mercado refere-se ao conjunto de sistemas, instituições, e processos que possibilitam a negociação eficiente de ativos financeiros. Essa infraestrutura é fundamental para o funcionamento do mercado financeiro, pois garante a liquidez, transparência, segurança e integridade das transações. Vamos explorar os principais componentes da infraestrutura de mercado.</p>
-
-
-               <h2>1° Instituições Financeiras</h2>
-
-
-               <p>As instituições financeiras são pilares fundamentais da infraestrutura de mercado. Elas incluem:</p>
-
-
-               <p>Corretoras: Intermediárias que facilitam a compra e venda de ativos para investidores.</p>
-
-
-               <p>Bancos de Investimento: Envolvidos na emissão de títulos e na assessoria financeira.</p>
-
-
-               <p>Fundos de Investimento: Coletam recursos de investidores para aplicar em uma variedade de ativos.</p>
-
-
-               <h2>2° Bolsas de Valores</h2>
-
-
-               <p>As bolsas de valores são plataformas organizadas onde as transações de ativos financeiros ocorrem. Elas desempenham um papel crucial na infraestrutura de mercado, proporcionando:</p>
-
-
-               <p>Transparência: Publicação de informações sobre preços e volumes de negociação.</p>
-
-
-               <p>Regulação: Supervisão de transações para garantir a conformidade com as leis e regulamentações.</p>
-
-
-               <p>Negociação Eletrônica: Sistemas que facilitam a negociação em tempo real, aumentando a eficiência.</p>
-
-
-               <h2>3° Sistemas de Negociação</h2>
-
-
-               <p>Os sistemas de negociação são tecnologias que permitem a execução de ordens. Eles incluem:</p>
-
-
-               <p>Plataformas de Negociação: Software que permite aos investidores executar ordens e acessar informações de mercado.</p>
-
-
-               <p>Sistemas de Matchmaking: Tecnologias que combinam ordens de compra e venda de maneira eficiente.</p>
-
-
-               <p>Acesso Direto ao Mercado (DMA): Permite que traders enviem ordens diretamente ao mercado, aumentando a velocidade de execução.</p>
-
-
-               <h2>4°Câmaras de Compensação</h2>
-
-
-               <p>As câmaras de compensação são entidades que facilitam a liquidação de transações, atuando como intermediárias entre compradores e vendedores. Elas garantem que:</p>
-
-
-               <p>Liquidação: As transações sejam liquidadas de forma segura e eficiente, minimizando o risco de default.</p>
-
-
-               <p>Gerenciamento de Risco: Avaliam e mitigam riscos associados a transações financeiras.</p>
-
-
-               <h2>5°Reguladores e Supervisores</h2>
-
-
-               <p>Os reguladores financeiros desempenham um papel crítico na supervisão da infraestrutura de mercado, garantindo que as práticas sejam justas e transparentes. Exemplos incluem:</p>
-
-
-               <p>Comissão de Valores Mobiliários (CVM): Regula o mercado de capitais no Brasil, garantindo a proteção dos investidores e a integridade do mercado.</p>
-
-
-               <p>Banco Central: Regula o sistema financeiro e implementa políticas monetárias, garantindo a estabilidade econômica.</p>
-
-
-               <h2>6° Tecnologia da Informação</h2>
-
-
-               <p>A tecnologia é uma parte essencial da infraestrutura de mercado, permitindo:</p>
-
-
-               <p>Sistemas de Informação: Fornecem dados em tempo real sobre preços, volumes e análises de mercado.</p>
-
-
-               <p>Segurança da Informação: Implementação de protocolos de segurança para proteger transações e dados dos investidores.</p>
-
-
-               <p>Blockchain: Uma tecnologia emergente que promete aumentar a segurança e a transparência nas transações.</p>
-
-
-               <h2>7° Serviços de Dados e Análise</h2>
-
-
-               <p>As empresas de dados e análise fornecem informações essenciais que ajudam investidores e traders a tomar decisões informadas. Elas incluem:</p>
-
-
-               <p>Serviços de Análise: Oferecem relatórios e análises de mercado, tendências e previsões.</p>
-
-
-               <p>Plataformas de Dados: Agregam informações financeiras de diversas fontes para facilitar o acesso a dados relevantes.</p>
-
-
-               <h2>8° Infraestrutura de Liquidez</h2>
-
-
-               <p>A infraestrutura de liquidez inclui mecanismos que garantem que os ativos possam ser comprados ou vendidos rapidamente sem afetar significativamente o preço. Isso inclui:</p>
-
-
-               <p>Market Makers: Entidades que proporcionam liquidez ao mercado, comprando e vendendo ativos para garantir que haja sempre um comprador ou vendedor.</p>
-
-
-               <p>Fundos de Liquidez: Fundos que mantêm reservas de ativos líquidos para facilitar transações rápidas.</p>
-
-
-               <h2>Participante do Mercado</h2>
-
-
-               <p>Os participantes do mercado financeiro desempenham papéis essenciais na negociação de ativos e na dinâmica econômica. Cada grupo tem suas próprias motivações e estratégias, contribuindo para a liquidez e a eficiência do mercado. Abaixo, estão os principais participantes do mercado:</p>
-
-
-               <h2>Investidores Individuais</h2>
-
-
-               <p>Descrição: Pessoas físicas que compram e vendem ativos financeiros para fins pessoais, como aposentadoria ou crescimento de capital.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Geralmente, têm menor capital em comparação com investidores institucionais.</p>
-
-
-               <p>Podem usar corretoras para acessar os mercados.</p>
-
-
-               <p>Buscam informações e análises para tomar decisões de investimento.</p>
-
-
-               <h2>Investidores Institucionais</h2>
-
-
-               <p>Descrição: Organizações que investem grandes somas de capital em nome de terceiros. Exemplos incluem fundos de pensão, seguradoras, e fundos mútuos.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Têm acesso a informações privilegiadas e análises profundas.</p>
-
-
-               <p>Geralmente possuem equipes de analistas e gestores de portfólio.</p>
-
-
-               <p>Influenciam os preços de mercado devido ao volume significativo de suas transações.</p>
-
-
-               <h2>Corretoras</h2>
-
-
-               <p>Descrição: Intermediárias que facilitam a compra e venda de ativos financeiros entre investidores e o mercado.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Oferecem plataformas de negociação e serviços de consultoria.</p>
-
-
-               <p>Podem cobrar comissões ou taxas por suas transações</p>
-
-
-               <p>Variam em serviços, desde corretoras tradicionais até plataformas de negociação online.</p>
-
-
-               <h2>Bancos de Investimento</h2>
-
-
-               <p>Descrição: Instituições financeiras que ajudam empresas a levantar capital e oferecem serviços de fusão e aquisição.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Realizam ofertas públicas iniciais (IPOs) e subscrevem títulos.</p>
-
-
-               <p>Oferecem consultoria financeira e análise de mercado.</p>
-
-
-               <p>Podem atuar como market makers.</p>
-
-
-               <h2>Market Makers</h2>
-
-
-               <p>Descrição: Entidades que garantem liquidez ao mercado, comprando e vendendo ativos financeiros.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Mantêm uma posição de compra e venda para garantir que haja sempre um comprador ou vendedor disponível.</p>
-             
-               <p>Ajudam a estabilizar os preços e a reduzir a volatilidade.</p>
-
-
-               <p>Podem operar em mercados de ações, opções e futuros.</p>
-
-
-               <h2>Câmaras de Compensação</h2>
-
-
-               <p>Descrição: Entidades que facilitam a liquidação de transações, agindo como intermediárias entre compradores e vendedores.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Garantem que as transações sejam liquidadas de forma segura e eficiente.</p>
-
-
-               <p>Avaliam o risco de default e garantem que as obrigações sejam cumpridas.</p>
-
-
-               <p>Proporcionam segurança adicional para as transações no mercado.</p>
-
-
-               <h2>Reguladores</h2>
-
-
-               <p>Descrição: Agências governamentais que supervisionam e regulam o funcionamento dos mercados financeiros.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Implementam regras para proteger investidores e garantir a integridade do mercado.</p>
-
-
-               <p>Exemplo: A Comissão de Valores Mobiliários (CVM) no Brasil, a Securities and Exchange Commission (SEC) nos EUA.</p>
-
-
-               <p>Monitoram práticas de negociação e garantem a transparência.</p>
-
-
-               <h2>Analistas e Consultores Financeiros</h2>
-
-
-               <p>Descrição: Profissionais que avaliam ativos e fornecem recomendações de investimento.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Podem trabalhar para instituições financeiras, corretoras ou como consultores independentes.</p>
-
-
-               <p>Usam análise fundamental e técnica para avaliar o desempenho de ativos.</p>
-
-
-               <p>Ajudam investidores a tomar decisões informadas com base em dados e tendências de mercado.</p>
-
-
-               <h2>Empresas Emissoras</h2>    
-
-
-               <p>Descrição: Empresas que emitem ações ou títulos para levantar capital.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Buscam financiamento para expansão, operações ou pagamento de dívidas.</p>
-
-
-               <p>Interagem com bancos de investimento para conduzir processos de emissão.</p>
-
-
-               <p>Sujeitas a regulamentações e exigências de divulgação de informações.</p>
-
-
-               <h2>Agências de Classificação de Risco</h2>
-
-
-               <p>Descrição: Empresas que avaliam o risco de crédito de emissores de títulos e produtos financeiros.</p>
-
-
-               <h3>Características:</h3>
-
-
-               <p>Atribuem notas de crédito que indicam a capacidade do emissor de cumprir suas obrigações.</p>
-
-
-               <p>Influenciam a percepção do mercado sobre o risco de investimentos.</p>
-
-
-               <p>Exemplos: Moody's, Standard & Poor's (S&P), e Fitch.</p>
-
-
-               <h2>Oque é ordem de mercado?</h2>
-
-
-               <p>Uma ordem de mercado é um tipo de instrução que um investidor dá a uma corretora para comprar ou vender um ativo financeiro (como ações, títulos ou commodities) ao preço atual de mercado. Esse tipo de ordem é utilizado quando a prioridade é a execução imediata da transação, independentemente do preço.</p>
-             
-               <h3>Características da Ordem de Mercado</h3>
-
-
-               <p>1°Execução Imediata: A ordem de mercado é executada assim que possível, garantindo que o investidor compre ou venda o ativo rapidamente.</p>
-
-
-               <p>2°Preço Atual: A transação ocorre pelo preço de mercado disponível no momento da execução. Isso significa que o preço final pode variar um pouco, especialmente em mercados voláteis.</p>
-
-
-               <p>3°Simplicidade: É uma das formas mais simples de ordem, sendo fácil de entender e utilizar, ideal para investidores que desejam rapidez na execução.</p>
-
-
-               <h3>Exemplos de Uso</h3>
-
-
-               <p>Compra de Ações: Um investidor decide comprar 100 ações de uma empresa. Ele emite uma ordem de mercado, e a corretora executa a compra ao melhor preço disponível, que pode ser diferente do preço que ele viu anteriormente.</p>
-
-
-               <p>Venda de Títulos: Se um investidor deseja vender um título rapidamente, ele pode usar uma ordem de mercado para garantir que a venda seja realizada imediatamente.</p>
-
-
-               <h3>Vantagens</h3>
-
-
-               <p>Rapidez: Ideal para investidores que precisam agir rapidamente, como em situações de mercado em movimento.</p>
-
-
-               <p>Facilidade de Uso: Ótima para iniciantes que não estão familiarizados com ordens complexas.</p>
-
-
-               <h3>Desvantagens</h3>
-
-
-               <p>Preço Incerto: O preço final da transação pode ser diferente do esperado, especialmente em mercados voláteis, onde os preços podem mudar rapidamente.</p>
-
-
-               <p>Slippage: Em mercados com baixa liquidez, pode ocorrer "slippage", onde a ordem é executada a um preço menos favorável do que o esperado.</p>
-
-
-               <h2>Ordem de compra e vendas</h2>
-
-
-               <p>As ordens de compra e venda são instruções que os investidores dão a suas corretoras para negociar ativos financeiros, como ações, títulos e outros instrumentos. Abaixo, explico em detalhes os tipos de ordens de compra e venda e suas características.</p>
-              
-               <h3>1°Ordem de Compra</h3>
-
-
-               <p>A ordem de compra é uma instrução para adquirir um ativo financeiro. Existem diferentes tipos de ordens de compra:</p>
-
-
-               <h4>a. Ordem de Mercado</h4>
-
-
-               <p>Descrição: A ordem é executada imediatamente ao preço atual de mercado.</p>
-
-
-               <p>Uso: Ideal para quem deseja comprar rapidamente, independentemente do preço exato.</p>
-
-
-               <h4>b. Ordem Limitada de Compra<h4>
-
-
-               <p>Descrição: A ordem é colocada para comprar um ativo a um preço específico ou melhor.</p>
-              
-               <p>Uso: Se o investidor acredita que o preço do ativo pode cair, ele pode definir uma ordem limitada para comprar a um preço mais baixo.</p>
-
-
-               <h4>c. Ordem Stop (ou Stop-Loss)</h4>
-
-
-               <p>Descrição: Uma ordem de compra que é ativada quando o preço do ativo atinge um determinado nível, geralmente usado para limitar perdas.</p>
-
-
-               <p>Uso: Protege o investidor de perdas maiores ao comprar o ativo quando atinge um preço que indica uma possível reversão de tendência.</p>
-
-
-               <h3>2. Ordem de Venda</h3>
-
-
-               <p>A ordem de venda é uma instrução para vender um ativo financeiro. Assim como as ordens de compra, existem diferentes tipos de ordens de venda:</p>
-              
-               <h4>a. Ordem de Mercado</h4>
-
-
-               <p>Descrição: A ordem é executada imediatamente ao preço atual de mercado.</p>
-
-
-               <p>Uso: Ideal para quem deseja vender rapidamente, independentemente do preço exato.</p>
-
-
-               <h4>b. Ordem Limitada de Venda</h4>
-
-
-               <p>Descrição: A ordem é colocada para vender um ativo a um preço específico ou melhor.</p>
-
-
-               <p>Uso: Se o investidor acredita que o preço do ativo pode subir, ele pode definir uma ordem limitada para vender a um preço mais alto.</p>
-
-
-               <h4>c. Ordem Stop (ou Stop-Loss)</h4>
-              
-               <p>Descrição: Uma ordem de venda que é ativada quando o preço do ativo atinge um determinado nível, geralmente usada para limitar perdas.</p>
-
-
-               <p>Uso: Protege o investidor de perdas maiores ao vender o ativo quando atinge um preço que indica uma possível reversão de tendência.</p>
-
-
-
-               <button onclick="showScreen('home')">Voltar</button>
-           </div>
-       </main>
-   </div>
-   <script src="script.js"></script>
+    <header>
+        <h1>Aprenda sobre a Bolsa</h1>
+    </header>
+    <main class="container">
+        <div class="content-section">
+            <h2>Como Começar a Investir?</h2>
+            <ul>
+                <li><p>1-Abra uma conta em uma corretora</p></li>
+                <li><p>2-Defina seu perfil de investidor</p></li>
+                <li><p>3-Estude o mercado</p></li>
+                <li><p>4-Comece com um valor acessível</p></li>
+                <li><p>5-Diversifique sua carteira</p></li>
+            </ul>
+        </div>
+        <div class="content-section">
+            <h2>1-Abra uma conta em uma corretora</h2>
+            <p>Abrir uma conta em uma corretora é essencial para investir, 
+                pois oferece acesso ao mercado financeiro, variedade de produtos 
+                e ferramentas de análise. As corretoras também proporcionam suporte 
+                educacional e segurança regulada, facilitando a diversificação 
+                da carteira e o acompanhamento dos investimentos. </p>
+                <p>Aqui estão algumas corretoras confiaveis:</p>
+            <ul>
+                <li>XP Investimentos</li>
+                <li>Modalmais</li>
+                <li>Rico</li>
+                <li>Banco Inter</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>2-Defina seu perfil de investidor</h2>
+            <p> É fundamental entender seu perfil de risco e seus objetivos financeiros.
+                Investidores mais conservadores preferem ativos com menor volatilidade, 
+                enquanto investidores maisagressivos podem buscar ativos com maior 
+                potencial de retorno, mas também com maior risco.</p>
+            <p>Quais são os perfis de investidores:</p>
+            <ul>
+                <li>Conservador</li>
+                <li>Moderado</li>
+                <li>Arrojado</li>
+            </ul>
+        </div>
+
+        <div class="content-section">
+            <h2>2-Defina seu perfil de investidor</h2>
+            <p> É fundamental entender seu perfil de risco e seus objetivos financeiros.
+                Investidores mais conservadores preferem ativos com menor volatilidade, 
+                enquanto investidores maisagressivos podem buscar ativos com maior 
+                potencial de retorno, mas também com maior risco.</p>
+            <p>Quais são os perfis de investidores:</p>
+            <ul>
+                <li>Conservador</li>
+                <li>Moderado</li>
+                <li>Arrojado</li>
+            </ul>
+        </div>
+
+
+
+
+        <div class="content-section">
+            <h2>Como funciona?</h2>
+            <p>Nosso sistema é simples e eficaz:</p>
+            <ol>
+                <li>Escolha um tema que deseja aprender.</li>
+                <li>Participe das aulas e acesse os materiais.</li>
+                <li>Pratique com exercícios e tire suas dúvidas.</li>
+                <li>Compartilhe seu conhecimento com a comunidade.</li>
+            </ol>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2023 Aprenda. Todos os direitos reservados.</p>
+    </footer>
 </body>
 </html>
 
+
+
+
+
+            <p>2-Defina seu perfil de investidor: É fundamental entender seu perfil de risco e seus objetivos financeiros.
+                Investidores mais conservadores preferem ativos com menor volatilidade, enquanto investidores mais
+                agressivos podem buscar ativos com maior potencial de retorno, mas também com maior risco.</p>
+
+            <p>3-Estude o mercado: Acompanhe as notícias do mercado financeiro, analise as empresas e setores que te
+                interessam. Existem diversas ferramentas e plataformas que podem te ajudar nessa tarefa, como plataformas de
+                análise gráfica, notícias financeiras e relatórios de empresas.</p>
+
+            <p>4-Comece com um valor acessível: Não é necessário investir um grande valor para começar. A maioria das
+                corretoras não exige um valor mínimo para abrir conta.</p>
+
+            <p>5-Diversifique sua carteira: Não coloque todos os seus ovos em uma única cesta. Distribua seus investimentos
+                em diferentes ativos, setores e regiões geográficas para reduzir o risco.</p>
+
+            <h4>Tipos de Investimentos na Bolsa:</h4>
+
+            <p>Ações: Representam a propriedade de uma fração de uma empresa. Ao comprar ações, você se torna um sócio da
+                empresa e tem direito a uma parte dos seus lucros.</p>
+
+            <p>Fundos de Investimento: Fundos que reúnem o dinheiro de vários investidores para aplicar em diversos ativos,
+                como ações, títulos de renda fixa e outros.</p>
+
+            <p>BDRs (Brazilian Depositary Receipts): Títulos que representam ações de empresas estrangeiras negociadas na
+                bolsa brasileira.</p>
+
+            <p>ETFs (Exchange-Traded Funds): Fundos que acompanham um índice de mercado, como o Ibovespa.</p>
+
+            <p>Fundos Imobiliários (FIIs): Fundos que investem em empreendimentos imobiliários, como shoppings, galpões
+                logísticos e edifícios comerciais.</p>
+        </div>
+
+        <h4>Quais os Riscos?</h4>
+
+        <p>Volatilidade do mercado: O valor das ações pode variar bastante em curto prazo, influenciado por diversos
+            fatores, como notícias corporativas, resultados econômicos e eventos geopolíticos.</p>
+
+        <p>Risco de empresa: A empresa na qual você investiu pode ter resultados ruins, o que pode levar à queda do
+            valor de suas ações.</p>
+
+        <p>Risco de mercado: Fatores como crises econômicas e políticas podem afetar o mercado como um todo.</p>
+
+        <h4>Dicas Importantes:</h4>
+
+        <p>Invista a longo prazo: A bolsa de valores é um investimento de longo prazo. Evite tomar decisões impulsivas
+            com base em oscilações de curto prazo.</p>
+
+        <p>Busque conhecimento: Leia sobre investimentos, acompanhe notícias do mercado e, se necessário, contrate um
+            assessor de investimentos.</p>
+
+        <p>Comece devagar: Não invista todo o seu dinheiro de uma vez. Aumente seus investimentos gradualmente.</p>
+
+        <p>Tenha paciência: Os resultados na bolsa de valores não são imediatos. É importante ter paciência e manter a
+            disciplina.</p>
+
+        <p>Diversifique sua carteira: A diversificação é fundamental para reduzir o risco. Distribua seus investimentos
+            em diferentes ativos, setores e regiões geográficas.</p>
+
+        <p>Acompanhe seus investimentos: Acompanhe regularmente seus investimentos para identificar oportunidades e
+            tomar as decisões mais adequadas.</p>
+
+
+        <h2>O que é a bolsa de valores?</h2>
+
+
+        <p>A bolsa de valores é um mercado financeiro onde se realiza a compra e venda de ativos, como ações, títulos e
+            derivativos. Ela serve como um mecanismo fundamental para a captação de recursos por empresas e para a
+            negociação de investimentos por indivíduos e instituições.</p>
+
+        <h2>Estrutura da Bolsa de Valores</h2>
+
+        <h3>Mercado Primário e Secundário</h3>
+
+        <h2>Mercado Primário</h2>
+
+
+        <p>O mercado primário é onde novos títulos, como ações e obrigações, são emitidos e vendidos pela primeira vez.
+            Nesse mercado, os emissores (normalmente empresas ou governos) levantam capital diretamente dos
+            investidores. </p>
+
+        <p>1ºEmissão de Títulos: No mercado primário, as empresas lançam novas ações ou títulos para financiar suas
+            operações, projetos ou expansões. A venda é realizada através de uma oferta pública inicial (IPO) ou uma
+            oferta de títulos.</p>
+
+        <p>2ºCapital Fresco: O dinheiro gerado pela venda de ações ou títulos no mercado primário vai diretamente para o
+            emissor, permitindo que ele use esses recursos para seus objetivos financeiros.</p>
+
+        <p>3ºIntermediários: Normalmente, bancos de investimento e corretoras atuam como intermediários na emissão e
+            venda de títulos, ajudando a determinar o preço e a estrutura da oferta.</p>
+
+        <p>4ºTransparência e Regulação: As emissões no mercado primário são frequentemente sujeitas a regulamentos
+            rigorosos, incluindo a divulgação de informações financeiras e a necessidade de aprovações regulatórias.</p>
+
+        <p>Exemplo</p>
+
+        <p>Quando uma empresa decide abrir seu capital e realiza um IPO, as ações são vendidas pela primeira vez ao
+            público no mercado primário. O capital arrecadado é utilizado para crescimento ou pagamento de dívidas.</p>
+
+        <h2>Mercado Secundário</h2>
+
+        <p>O mercado secundário é onde os títulos previamente emitidos são comprados e vendidos entre investidores.
+            Nesse mercado, as transações não envolvem diretamente o emissor, mas sim a troca de títulos entre os
+            investidores.</p>
+
+        <p>Preços e Cotações: Os preços das ações e outros ativos são atualizados em tempo real, refletindo as condições
+            do mercado. Essa informação é crucial para investidores tomarem decisões informadas.</p>
+
+        <p>1ºLiquidez: O mercado secundário proporciona liquidez aos investidores, permitindo que eles comprem ou vendam
+            títulos rapidamente a qualquer momento após a emissão inicial.</p>
+
+        <p>2ºDeterminação de Preços: Os preços das ações e títulos no mercado secundário são determinados pela oferta e
+            demanda. Fatores como desempenho financeiro da empresa, condições de mercado e expectativas econômicas
+            influenciam esses preços.</p>
+
+        <p>3ºDiversidade de Investidores: Neste mercado, podem participar investidores individuais, institucionais e
+            profissionais, todos buscando oportunidades de investimento e gerenciamento de portfólio.</p>
+
+        <p>4ºMenos Regulação Direta: Embora ainda haja regulamentos, as transações no mercado secundário geralmente são
+            menos rigorosamente reguladas em comparação ao mercado primário, pois não envolvem a emissão de novos
+            títulos.</p>
+
+        <p>Exemplo</p>
+
+
+        <p>Após uma empresa ter realizado seu IPO, suas ações são negociadas no mercado secundário. Um investidor que
+            comprou ações durante o IPO pode vender suas ações para outro investidor a um preço que pode ser maior ou
+            menor do que o preço de emissão, dependendo das condições de mercado.</p>
+
+        <h2>Instituiçõe envolvida</h2>
+
+        <p>As instituições financeiras desempenham um papel crucial no funcionamento dos mercados financeiros,
+            facilitando a intermediação entre investidores e emissores de títulos, além de garantir a estabilidade e a
+            eficiência do sistema. Abaixo estão as principais instituições envolvidas, suas funções e características.
+        </p>
+
+        <h2>1ºBancos Comerciais</h2>
+
+        <p>Função</p>
+
+        <p>Os bancos comerciais são instituições que aceitam depósitos e oferecem uma variedade de serviços financeiros,
+            incluindo contas correntes, empréstimos e financiamentos. Eles atuam como intermediários entre aqueles que
+            têm capital disponível (depositantes) e aqueles que precisam de recursos (tomadores de empréstimos).</p>
+
+
+        <h3>Características</h3>
+
+
+        <p>Captação de Recursos: Os bancos captam recursos por meio de depósitos dos clientes, que são utilizados para
+            conceder empréstimos.</p>
+
+
+        <p>Serviços de Pagamento: Facilitam transações financeiras através de cheques, cartões de crédito e
+            transferências eletrônicas.</p>
+
+        <p>Assessoria: Oferecem serviços de consultoria financeira e gestão de ativos.</p>
+
+        <h2>2ºBancos de Investimento</h2>
+
+
+        <p>Função</p>
+
+
+        <p>Os bancos de investimento são especializados em serviços relacionados à emissão de títulos, fusões e
+            aquisições, e assessoria financeira. Eles não aceitam depósitos, focando principalmente em serviços para
+            empresas e investidores institucionais.</p>
+
+
+        <h3>Características</h3>
+
+
+        <p>1ºSubscrição de Títulos: Auxiliam empresas a emitir ações e títulos, atuando como subscritores que garantem a
+            venda dos títulos.</p>
+
+
+        <p>2ºFusões e Aquisições: Prestam serviços de consultoria em operações de fusão, aquisição e reestruturação
+            corporativa.</p>
+
+
+        <p>3ºMercado de Capitais: Facilitam a negociação de ações e outros ativos no mercado secundário.</p>
+
+
+        <h2>Corretoras de Valores</h2>
+
+
+        <p>Função</p>
+
+
+        <p>As corretoras atuam como intermediárias na compra e venda de títulos, como ações, títulos públicos e
+            commodities. Elas conectam investidores aos mercados financeiros.</p>
+
+
+        <h3>Características</h3>
+
+
+        <p>1ºExecução de Ordens: Recebem ordens de compra e venda de clientes e executam essas transações no mercado.
+        </p>
+
+
+        <p>2ºAssessoria: Oferecem recomendações e análises de mercado, ajudando os investidores a tomar decisões
+            informadas.</p>
+
+
+        <p>3ºAcesso ao Mercado: Fornecem plataformas de negociação que permitem aos investidores acessar mercados
+            financeiros de forma direta.</p>
+
+
+        <h2>Bolsas de Valores</h2>
+
+
+        <p>Função</p>
+
+
+        <p>As bolsas de valores são plataformas organizadas onde ações, títulos e outros ativos são comprados e
+            vendidos. Elas garantem a transparência e a eficiência das transações.</p>
+
+
+        <h3>Características</h3>
+
+
+        <p>1ºListagem de Títulos: Empresas podem listar suas ações na bolsa para facilitar a negociação.</p>
+
+
+        <p>2ºRegulação e Supervisão: As bolsas atuam sob a supervisão de órgãos reguladores, garantindo que as
+            transações sejam justas e transparentes.</p>
+
+
+        <p>3ºIndicadores de Mercado: Fornecem índices que ajudam a monitorar o desempenho do mercado, como o IBOVESPA no
+            Brasil.</p>
+
+
+        <h2>Agências de Classificação de Risco</h2>
+
+
+        <p>Função</p>
+
+
+        <p>As agências de classificação de risco avaliam a qualidade de crédito de emissores de títulos e de seus
+            títulos, ajudando investidores a entender os riscos associados a um investimento.</p>
+
+
+        <h3>Características</h3>
+
+
+        <p>1ºClassificações de Crédito: Fornecem notas (ratings) que indicam a capacidade do emissor de cumprir suas
+            obrigações financeiras.</p>
+
+
+        <p>2ºTransparência: Ajudam a aumentar a transparência no mercado, permitindo que investidores tomem decisões
+            mais informadas.</p>
+
+
+        <p>3ºInfluência no Custo do Capital: Uma classificação elevada pode resultar em menores custos de financiamento
+            para as empresas.</p>
+
+
+        <h2>Reguladores Financeiros</h2>
+
+
+        <p>Função</p>
+
+
+        <p>Os reguladores financeiros, como a Comissão de Valores Mobiliários (CVM) no Brasil, são responsáveis pela
+            supervisão e regulamentação dos mercados financeiros para garantir a proteção dos investidores e a
+            integridade do sistema financeiro.</p>
+
+
+        <h3>Características</h3>
+
+
+        <p>1ºSupervisão: Monitoram as atividades das instituições financeiras para prevenir fraudes e garantir a
+            conformidade com as leis.</p>
+
+
+        <p>2ºProteção ao Investidor: Implementam regras para proteger os investidores e garantir que tenham acesso a
+            informações claras.</p>
+
+
+        <p>3ºEstabilidade do Sistema: Trabalham para garantir a estabilidade e a confiança no sistema financeiro.</p>
+
+
+        <h2>Fundos de Investimento</h2>
+
+
+        <p>Função</p>
+
+
+        <p>Os fundos de investimento são veículos que permitem a um grupo de investidores aplicar seus recursos em um
+            portfólio diversificado de ativos, gerido por profissionais.</p>
+
+
+        <h3>Características</h3>
+
+
+        <p>1ºDiversificação: Oferecem uma maneira de diversificar investimentos, reduzindo riscos associados a ativos
+            individuais.</p>
+
+        <p>2ºGestão Profissional: Administrados por gestores que tomam decisões de investimento com base em análises de
+            mercado.</p>
+
+
+        <p>3ºAcesso a Oportunidades: Permitem que investidores individuais acessem ativos que poderiam ser inacessíveis
+            para eles de outra forma.</p>
+
+
+        <h2>Plataforma de Negociações</h2>
+
+
+        <h2>Tipos de Plataformas de Negociação</h2>
+
+
+        <p>1ºPlataformas de Acesso Direto ao Mercado (DMA)</p>
+
+        <p>Definição: Permitem que os traders enviem ordens diretamente ao mercado sem a necessidade de intermediários.
+        </p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Execução rápida de ordens.</p>
+
+        <p>Acesso a dados em tempo real.</p>
+
+
+        <p>Ideal para traders de alta frequência.</p>
+
+
+        <h2>Plataformas de Corretoras</h2>
+
+
+        <p>Definição: Oferecidas por corretoras, essas plataformas permitem que os investidores negociem uma variedade
+            de ativos.</p>
+
+        <h3>Características:</h3>
+
+
+        <p>Interface amigável para iniciantes.</p>
+
+
+        <p>Suporte ao cliente.</p>
+
+
+        <p>Ferramentas de pesquisa e análise.</p>
+
+
+        <h2>Plataformas de Trading de Criptomoedas</h2>
+
+        <p>Definição: Focadas na negociação de criptomoedas, essas plataformas oferecem acesso a uma variedade de tokens
+            e moedas digitais.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Possibilidade de negociação em pares de criptomoedas.</p>
+
+
+        <p>Funcionalidades de segurança, como autenticação de dois fatores.</p>
+
+
+        <p>Interfaces intuitivas para facilitar a negociação.</p>
+
+        <h2>Plataformas de Trading Móvel</h2>
+
+
+        <p>Definição: Aplicativos que permitem a negociação a partir de dispositivos móveis.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Acesso a mercados em qualquer lugar e a qualquer hora.</p>
+
+
+        <p>Notificações em tempo real sobre movimentos de preços.</p>
+
+
+        <p>Funcionalidades de análise técnica e gráficos.</p>
+
+        <h2>Funcionalidades Comuns</h2>
+
+
+        <h2>Gráficos e Ferramentas de Análise</h2>
+
+
+        <p>1ºGráficos interativos com diversas opções de indicadores técnicos.</p>
+
+
+        <p>2ºFerramentas para traçar tendências e padrões de preço.</p>
+
+
+        <p>3ºAnálises fundamentalistas e relatórios de mercado.</p>
+
+
+        <h2>Execução de Ordens</h2>
+
+
+        <p>Diferentes tipos de ordens, como ordens de mercado, ordens limitadas e ordens stop.</p>
+
+        <p>Opções para programar ordens (ordens condicionais).</p>
+
+
+        <p>Relatórios de execução e histórico de transações.</p>
+
+
+        <h2>Recursos Educacionais</h2>
+
+
+        <p>Tutoriais e webinars para ajudar os investidores a entenderem o funcionamento da plataforma.</p>
+
+
+        <p>Artigos e análises de mercado que ajudam na tomada de decisões.</p>
+
+        <p>Simuladores de negociação para prática sem riscos.</p>
+
+
+        <h2>Segurança</h2>
+
+
+        <p>Medidas de segurança, como criptografia e autenticação de dois fatores.</p>
+
+
+        <p>Políticas de proteção contra fraudes.</p>
+
+
+        <p>Certificações de segurança e conformidade regulatória.</p>
+
+        <h2>Suporte ao Cliente</h2>
+
+        <p>Atendimento ao cliente por diversos canais (chat, e-mail, telefone).</p>
+
+
+        <p>Seções de perguntas frequentes (FAQ) e recursos de autoajuda.</p>
+
+
+        <p>Assistência em questões técnicas e operacionais.</p>
+
+        <h2>Considerações na Escolha de uma Plataforma</h2>
+
+
+        <h2>Taxas e Comissões</h2>
+
+
+        <p>Avaliar as comissões de negociação e taxas associadas ao uso da plataforma.</p>
+
+
+        <p>Comparar custos com outras plataformas e corretoras.</p>
+
+        <h2>Usabilidade</h2>
+
+
+        <p>Interface intuitiva e fácil de navegar.</p>
+
+
+        <p>Acessibilidade em dispositivos móveis e desktops.</p>
+
+        <p>Personalização de layouts e ferramentas.</p>
+
+
+        <h2>Variedade de Ativos</h2>
+
+
+        <p>A plataforma deve oferecer acesso a uma ampla gama de ativos, dependendo das preferências do investidor.</p>
+
+
+        <p>Verificar se a plataforma cobre mercados locais e internacionais.</p>
+
+
+        <h2>Recursos Adicionais</h2>
+
+
+        <p>Ferramentas avançadas, como algoritmos de negociação e análises de risco.</p>
+
+        <p>Integração com outras ferramentas e plataformas.</p>
+
+
+        <h2>Exemplos de Plataformas de Negociação</h2>
+
+
+        <p>1°MetaTrader 4/5</p>
+
+
+        <p>Popular entre traders de forex e CFDs, com ferramentas avançadas de análise técnica.</p>
+
+
+        <p>Permite a criação de robôs de negociação (Expert Advisors).</p>
+
+
+        <p>2°Thinkorswim (TD Ameritrade)</p>
+
+
+        <p>Plataforma robusta que oferece uma ampla gama de ferramentas de análise e recursos educacionais.</p>
+
+
+        <p>Adequada tanto para iniciantes quanto para traders experientes.</p>
+
+
+        <h2>Binance</h2>
+
+
+        <p>Uma das maiores plataformas de criptomoedas, com acesso a uma vasta gama de tokens.</p>
+
+
+        <p>Oferece recursos de negociação avançada, como margem e futuros.</p>
+
+
+        <h2>Interactive Brokers</h2>
+
+
+        <p>Conhecida por suas baixas comissões e acesso a mercados globais.</p>
+
+
+        <p>Plataforma adequada para investidores institucionais e traders ativos.</p>
+
+
+        <h2>Indíce de Mercado</h2>
+
+        <h2>O que é um Índice de Mercado?</h2>
+
+
+        <p>Os índices de mercado são indicadores que medem o desempenho de um grupo específico de ações ou ativos,
+            servindo como barômetros para avaliar a saúde geral de um mercado financeiro ou de um setor específico. Eles
+            são amplamente utilizados por investidores e analistas para entender tendências de mercado e para tomar
+            decisões de investimento. Aqui está uma visão detalhada sobre o que são índices de mercado, como funcionam e
+            alguns exemplos populares.</p>
+
+
+        <h2>Como Funcionam os Índices de Mercado?</h2>
+
+
+        <p>1°Cálculo: Os índices são geralmente calculados com base no preço das ações das empresas que o compõem. A
+            fórmula de cálculo pode variar, mas os métodos mais comuns são:</p>
+
+
+        <p>Média Aritmética: Onde os preços das ações são somados e divididos pelo número de ações no índice.</p>
+
+
+        <p>Média Ponderada: Onde as ações são ponderadas com base de seu valor de mercado, dando mais influência a
+            empresas maiores.</p>
+
+
+        <p>Valor de Mercado: Alguns índices são baseados no valor total de mercado das empresas, ponderando suas ações
+            em circulação.</p>
+
+
+        <p>2°Revisão Periódica: Os índices são revisados regularmente para refletir mudanças no mercado. Isso pode
+            incluir a adição ou remoção de empresas com base em critérios específicos, como capitalização de mercado ou
+            liquidez.</p>
+
+
+        <p>3°Divulgação: Os índices são divulgados regularmente, frequentemente em tempo real, e podem ser seguidos em
+            plataformas financeiras, noticiários e sites de corretoras.</p>
+
+
+        <h2>Exemplos de Índices de Mercado</h2>
+
+
+        <p>1° exemplo: Índice Bovespa (IBOV)</p>
+
+
+        <p>Descrição: Principal índice da bolsa de valores brasileira (B3), que mede o desempenho das ações mais
+            negociadas.</p>
+
+
+        <p>Composição: Inclui ações de empresas que possuem alta liquidez e representam setores variados da economia.
+        </p>
+
+
+        <p>2°S&P 500</p>
+
+
+        <p>Descrição: Um dos índices mais amplamente seguidos do mercado norte-americano, composto por 500 das maiores
+            empresas listadas nas bolsas dos EUA.</p>
+
+
+        <p>Importância: Considerado um indicador chave da saúde econômica dos EUA.</p>
+
+
+        <p>3°Dow Jones Industrial Average (DJIA)</p>
+
+
+        <p>Descrição: Um dos índices mais antigos e conhecidos, composto por 30 grandes empresas industriais nos EUA.
+        </p>
+
+
+        <p>Cálculo: Baseado na média aritmética dos preços das ações, ponderada pelo preço das ações individuais.</p>
+
+
+        <p>4°NASDAQ Composite</p>
+
+
+        <p>Descrição: Um índice que inclui todas as ações listadas na bolsa de valores NASDAQ, com forte ênfase em
+            tecnologia e inovação.</p>
+
+
+        <p>Relevância: Frequentemente usado para medir o desempenho do setor de tecnologia.</p>
+
+
+        <p>5°FTSE 100</p>
+
+
+        <p>Descrição: Índice das 100 maiores empresas listadas na Bolsa de Valores de Londres.</p>
+
+
+        <p>Importância: Um indicador da saúde econômica do Reino Unido.</p>
+
+
+        <h2>Importância dos Índices de Mercado</h2>
+
+
+        <p>Benchmarking: Os investidores usam índices como referência para comparar o desempenho de seus investimentos e
+            fundos de investimento.</p>
+
+
+        <p>Análise de Tendências: Acompanhando o desempenho dos índices, os investidores podem identificar tendências de
+            mercado e tomar decisões informadas.</p>
+
+
+        <p>Gestão de Risco: A análise de índices ajuda na avaliação do risco de investimentos em comparação com o
+            desempenho do mercado em geral.</p>
+
+
+        <h2>Infraestrutura do Mercado</h2>
+
+
+        <p>A infraestrutura de mercado refere-se ao conjunto de sistemas, instituições, e processos que possibilitam a
+            negociação eficiente de ativos financeiros. Essa infraestrutura é fundamental para o funcionamento do
+            mercado financeiro, pois garante a liquidez, transparência, segurança e integridade das transações. Vamos
+            explorar os principais componentes da infraestrutura de mercado.</p>
+
+
+        <h2>1° Instituições Financeiras</h2>
+
+
+        <p>As instituições financeiras são pilares fundamentais da infraestrutura de mercado. Elas incluem:</p>
+
+
+        <p>Corretoras: Intermediárias que facilitam a compra e venda de ativos para investidores.</p>
+
+
+        <p>Bancos de Investimento: Envolvidos na emissão de títulos e na assessoria financeira.</p>
+
+
+        <p>Fundos de Investimento: Coletam recursos de investidores para aplicar em uma variedade de ativos.</p>
+
+
+        <h2>2° Bolsas de Valores</h2>
+
+
+        <p>As bolsas de valores são plataformas organizadas onde as transações de ativos financeiros ocorrem. Elas
+            desempenham um papel crucial na infraestrutura de mercado, proporcionando:</p>
+
+
+        <p>Transparência: Publicação de informações sobre preços e volumes de negociação.</p>
+
+
+        <p>Regulação: Supervisão de transações para garantir a conformidade com as leis e regulamentações.</p>
+
+
+        <p>Negociação Eletrônica: Sistemas que facilitam a negociação em tempo real, aumentando a eficiência.</p>
+
+
+        <h2>3° Sistemas de Negociação</h2>
+
+
+        <p>Os sistemas de negociação são tecnologias que permitem a execução de ordens. Eles incluem:</p>
+
+
+        <p>Plataformas de Negociação: Software que permite aos investidores executar ordens e acessar informações de
+            mercado.</p>
+
+
+        <p>Sistemas de Matchmaking: Tecnologias que combinam ordens de compra e venda de maneira eficiente.</p>
+
+
+        <p>Acesso Direto ao Mercado (DMA): Permite que traders enviem ordens diretamente ao mercado, aumentando a
+            velocidade de execução.</p>
+
+
+        <h2>4°Câmaras de Compensação</h2>
+
+
+        <p>As câmaras de compensação são entidades que facilitam a liquidação de transações, atuando como intermediárias
+            entre compradores e vendedores. Elas garantem que:</p>
+
+
+        <p>Liquidação: As transações sejam liquidadas de forma segura e eficiente, minimizando o risco de default.</p>
+
+
+        <p>Gerenciamento de Risco: Avaliam e mitigam riscos associados a transações financeiras.</p>
+
+
+        <h2>5°Reguladores e Supervisores</h2>
+
+
+        <p>Os reguladores financeiros desempenham um papel crítico na supervisão da infraestrutura de mercado,
+            garantindo que as práticas sejam justas e transparentes. Exemplos incluem:</p>
+
+
+        <p>Comissão de Valores Mobiliários (CVM): Regula o mercado de capitais no Brasil, garantindo a proteção dos
+            investidores e a integridade do mercado.</p>
+
+
+        <p>Banco Central: Regula o sistema financeiro e implementa políticas monetárias, garantindo a estabilidade
+            econômica.</p>
+
+
+        <h2>6° Tecnologia da Informação</h2>
+
+
+        <p>A tecnologia é uma parte essencial da infraestrutura de mercado, permitindo:</p>
+
+
+        <p>Sistemas de Informação: Fornecem dados em tempo real sobre preços, volumes e análises de mercado.</p>
+
+
+        <p>Segurança da Informação: Implementação de protocolos de segurança para proteger transações e dados dos
+            investidores.</p>
+
+
+        <p>Blockchain: Uma tecnologia emergente que promete aumentar a segurança e a transparência nas transações.</p>
+
+
+        <h2>7° Serviços de Dados e Análise</h2>
+
+
+        <p>As empresas de dados e análise fornecem informações essenciais que ajudam investidores e traders a tomar
+            decisões informadas. Elas incluem:</p>
+
+
+        <p>Serviços de Análise: Oferecem relatórios e análises de mercado, tendências e previsões.</p>
+
+
+        <p>Plataformas de Dados: Agregam informações financeiras de diversas fontes para facilitar o acesso a dados
+            relevantes.</p>
+
+
+        <h2>8° Infraestrutura de Liquidez</h2>
+
+
+        <p>A infraestrutura de liquidez inclui mecanismos que garantem que os ativos possam ser comprados ou vendidos
+            rapidamente sem afetar significativamente o preço. Isso inclui:</p>
+
+
+        <p>Market Makers: Entidades que proporcionam liquidez ao mercado, comprando e vendendo ativos para garantir que
+            haja sempre um comprador ou vendedor.</p>
+
+
+        <p>Fundos de Liquidez: Fundos que mantêm reservas de ativos líquidos para facilitar transações rápidas.</p>
+
+
+        <h2>Participante do Mercado</h2>
+
+
+        <p>Os participantes do mercado financeiro desempenham papéis essenciais na negociação de ativos e na dinâmica
+            econômica. Cada grupo tem suas próprias motivações e estratégias, contribuindo para a liquidez e a
+            eficiência do mercado. Abaixo, estão os principais participantes do mercado:</p>
+
+
+        <h2>Investidores Individuais</h2>
+
+
+        <p>Descrição: Pessoas físicas que compram e vendem ativos financeiros para fins pessoais, como aposentadoria ou
+            crescimento de capital.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Geralmente, têm menor capital em comparação com investidores institucionais.</p>
+
+
+        <p>Podem usar corretoras para acessar os mercados.</p>
+
+
+        <p>Buscam informações e análises para tomar decisões de investimento.</p>
+
+
+        <h2>Investidores Institucionais</h2>
+
+
+        <p>Descrição: Organizações que investem grandes somas de capital em nome de terceiros. Exemplos incluem fundos
+            de pensão, seguradoras, e fundos mútuos.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Têm acesso a informações privilegiadas e análises profundas.</p>
+
+
+        <p>Geralmente possuem equipes de analistas e gestores de portfólio.</p>
+
+
+        <p>Influenciam os preços de mercado devido ao volume significativo de suas transações.</p>
+
+
+        <h2>Corretoras</h2>
+
+
+        <p>Descrição: Intermediárias que facilitam a compra e venda de ativos financeiros entre investidores e o
+            mercado.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Oferecem plataformas de negociação e serviços de consultoria.</p>
+
+
+        <p>Podem cobrar comissões ou taxas por suas transações</p>
+
+
+        <p>Variam em serviços, desde corretoras tradicionais até plataformas de negociação online.</p>
+
+
+        <h2>Bancos de Investimento</h2>
+
+
+        <p>Descrição: Instituições financeiras que ajudam empresas a levantar capital e oferecem serviços de fusão e
+            aquisição.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Realizam ofertas públicas iniciais (IPOs) e subscrevem títulos.</p>
+
+
+        <p>Oferecem consultoria financeira e análise de mercado.</p>
+
+
+        <p>Podem atuar como market makers.</p>
+
+
+        <h2>Market Makers</h2>
+
+
+        <p>Descrição: Entidades que garantem liquidez ao mercado, comprando e vendendo ativos financeiros.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Mantêm uma posição de compra e venda para garantir que haja sempre um comprador ou vendedor disponível.</p>
+
+        <p>Ajudam a estabilizar os preços e a reduzir a volatilidade.</p>
+
+
+        <p>Podem operar em mercados de ações, opções e futuros.</p>
+
+
+        <h2>Câmaras de Compensação</h2>
+
+
+        <p>Descrição: Entidades que facilitam a liquidação de transações, agindo como intermediárias entre compradores e
+            vendedores.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Garantem que as transações sejam liquidadas de forma segura e eficiente.</p>
+
+
+        <p>Avaliam o risco de default e garantem que as obrigações sejam cumpridas.</p>
+
+
+        <p>Proporcionam segurança adicional para as transações no mercado.</p>
+
+
+        <h2>Reguladores</h2>
+
+
+        <p>Descrição: Agências governamentais que supervisionam e regulam o funcionamento dos mercados financeiros.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Implementam regras para proteger investidores e garantir a integridade do mercado.</p>
+
+
+        <p>Exemplo: A Comissão de Valores Mobiliários (CVM) no Brasil, a Securities and Exchange Commission (SEC) nos
+            EUA.</p>
+
+
+        <p>Monitoram práticas de negociação e garantem a transparência.</p>
+
+
+        <h2>Analistas e Consultores Financeiros</h2>
+
+
+        <p>Descrição: Profissionais que avaliam ativos e fornecem recomendações de investimento.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Podem trabalhar para instituições financeiras, corretoras ou como consultores independentes.</p>
+
+
+        <p>Usam análise fundamental e técnica para avaliar o desempenho de ativos.</p>
+
+
+        <p>Ajudam investidores a tomar decisões informadas com base em dados e tendências de mercado.</p>
+
+
+        <h2>Empresas Emissoras</h2>
+
+
+        <p>Descrição: Empresas que emitem ações ou títulos para levantar capital.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Buscam financiamento para expansão, operações ou pagamento de dívidas.</p>
+
+
+        <p>Interagem com bancos de investimento para conduzir processos de emissão.</p>
+
+
+        <p>Sujeitas a regulamentações e exigências de divulgação de informações.</p>
+
+
+        <h2>Agências de Classificação de Risco</h2>
+
+
+        <p>Descrição: Empresas que avaliam o risco de crédito de emissores de títulos e produtos financeiros.</p>
+
+
+        <h3>Características:</h3>
+
+
+        <p>Atribuem notas de crédito que indicam a capacidade do emissor de cumprir suas obrigações.</p>
+
+
+        <p>Influenciam a percepção do mercado sobre o risco de investimentos.</p>
+
+
+        <p>Exemplos: Moody's, Standard & Poor's (S&P), e Fitch.</p>
+
+
+        <h2>Oque é ordem de mercado?</h2>
+
+
+        <p>Uma ordem de mercado é um tipo de instrução que um investidor dá a uma corretora para comprar ou vender um
+            ativo financeiro (como ações, títulos ou commodities) ao preço atual de mercado. Esse tipo de ordem é
+            utilizado quando a prioridade é a execução imediata da transação, independentemente do preço.</p>
+
+        <h3>Características da Ordem de Mercado</h3>
+
+
+        <p>1°Execução Imediata: A ordem de mercado é executada assim que possível, garantindo que o investidor compre ou
+            venda o ativo rapidamente.</p>
+
+
+        <p>2°Preço Atual: A transação ocorre pelo preço de mercado disponível no momento da execução. Isso significa que
+            o preço final pode variar um pouco, especialmente em mercados voláteis.</p>
+
+
+        <p>3°Simplicidade: É uma das formas mais simples de ordem, sendo fácil de entender e utilizar, ideal para
+            investidores que desejam rapidez na execução.</p>
+
+
+        <h3>Exemplos de Uso</h3>
+
+
+        <p>Compra de Ações: Um investidor decide comprar 100 ações de uma empresa. Ele emite uma ordem de mercado, e a
+            corretora executa a compra ao melhor preço disponível, que pode ser diferente do preço que ele viu
+            anteriormente.</p>
+
+
+        <p>Venda de Títulos: Se um investidor deseja vender um título rapidamente, ele pode usar uma ordem de mercado
+            para garantir que a venda seja realizada imediatamente.</p>
+
+
+        <h3>Vantagens</h3>
+
+
+        <p>Rapidez: Ideal para investidores que precisam agir rapidamente, como em situações de mercado em movimento.
+        </p>
+
+
+        <p>Facilidade de Uso: Ótima para iniciantes que não estão familiarizados com ordens complexas.</p>
+
+
+        <h3>Desvantagens</h3>
+
+
+        <p>Preço Incerto: O preço final da transação pode ser diferente do esperado, especialmente em mercados voláteis,
+            onde os preços podem mudar rapidamente.</p>
+
+
+        <p>Slippage: Em mercados com baixa liquidez, pode ocorrer "slippage", onde a ordem é executada a um preço menos
+            favorável do que o esperado.</p>
+
+
+        <h2>Ordem de compra e vendas</h2>
+
+
+        <p>As ordens de compra e venda são instruções que os investidores dão a suas corretoras para negociar ativos
+            financeiros, como ações, títulos e outros instrumentos. Abaixo, explico em detalhes os tipos de ordens de
+            compra e venda e suas características.</p>
+
+        <h3>1°Ordem de Compra</h3>
+
+
+        <p>A ordem de compra é uma instrução para adquirir um ativo financeiro. Existem diferentes tipos de ordens de
+            compra:</p>
+
+
+        <h4>a. Ordem de Mercado</h4>
+
+
+        <p>Descrição: A ordem é executada imediatamente ao preço atual de mercado.</p>
+
+
+        <p>Uso: Ideal para quem deseja comprar rapidamente, independentemente do preço exato.</p>
+
+
+        <h4>b. Ordem Limitada de Compra<h4>
+
+
+                <p>Descrição: A ordem é colocada para comprar um ativo a um preço específico ou melhor.</p>
+
+                <p>Uso: Se o investidor acredita que o preço do ativo pode cair, ele pode definir uma ordem limitada
+                    para comprar a um preço mais baixo.</p>
+
+
+                <h4>c. Ordem Stop (ou Stop-Loss)</h4>
+
+
+                <p>Descrição: Uma ordem de compra que é ativada quando o preço do ativo atinge um determinado nível,
+                    geralmente usado para limitar perdas.</p>
+
+
+                <p>Uso: Protege o investidor de perdas maiores ao comprar o ativo quando atinge um preço que indica uma
+                    possível reversão de tendência.</p>
+
+
+                <h3>2. Ordem de Venda</h3>
+
+
+                <p>A ordem de venda é uma instrução para vender um ativo financeiro. Assim como as ordens de compra,
+                    existem diferentes tipos de ordens de venda:</p>
+
+                <h4>a. Ordem de Mercado</h4>
+
+
+                <p>Descrição: A ordem é executada imediatamente ao preço atual de mercado.</p>
+
+
+                <p>Uso: Ideal para quem deseja vender rapidamente, independentemente do preço exato.</p>
+
+
+                <h4>b. Ordem Limitada de Venda</h4>
+
+
+                <p>Descrição: A ordem é colocada para vender um ativo a um preço específico ou melhor.</p>
+
+
+                <p>Uso: Se o investidor acredita que o preço do ativo pode subir, ele pode definir uma ordem limitada
+                    para vender a um preço mais alto.</p>
+
+
+                <h4>c. Ordem Stop (ou Stop-Loss)</h4>
+
+                <p>Descrição: Uma ordem de venda que é ativada quando o preço do ativo atinge um determinado nível,
+                    geralmente usada para limitar perdas.</p>
+
+
+                <p>Uso: Protege o investidor de perdas maiores ao vender o ativo quando atinge um preço que indica uma
+                    possível reversão de tendência.</p>
+
+
+
+                <button onclick="showScreen('home')">Voltar</button>
+    </div>
+    </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
