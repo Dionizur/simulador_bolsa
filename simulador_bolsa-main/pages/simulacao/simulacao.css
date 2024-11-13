@@ -1,0 +1,101 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #009130, #005700);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer {
+    background-color: rgb(29, 64, 110);
+    opacity: 0.9;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.container {
+    max-width: 900px; /* Aumentar a largura máxima */
+    margin: 40px auto;
+    padding: 30px; /* Aumentar o padding */
+    background-color: #ffffff;
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Sombra mais suave */
+}
+
+h2 {
+    margin-top: 20px; /* Mais espaço acima dos títulos */
+    margin-bottom: 10px; /* Menos espaço abaixo dos títulos */
+}
+
+h1, h2 {
+    font-family: 'Georgia', serif; /* Fonte serif para títulos */
+    text-transform: uppercase; /* Títulos em maiúsculas */
+}
+
+p {
+    line-height: 1.6; /* Melhorar a legibilidade do texto */
+}
+
+.stock-list, .portfolio, .controls {
+    margin-bottom: 20px;
+}
+
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 15px 0;
+    padding: 10px;
+    background-color: #f9f9f9; /* Fundo claro para os itens da lista */
+    border-left: 4px solid #4CAF50; /* Linha à esquerda */
+    border-radius: 4px; /* Bordas arredondadas */
+    transition: background-color 0.3s; /* Transição suave */
+}
+
+li:hover {
+    background-color: #e9e9e9; /* Cor ao passar o mouse */
+}
+
+button {
+    margin-left: 10px;
+    padding: 10px 20px; /* Botões maiores */
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease; /* Transição suave */
+}
+
+button:hover {
+    background-color: #45a049; /* Cor ao passar o mouse */
+    transform: scale(1.05); /* Leve aumento ao passar o mouse */
+}
+
+header,h1{
+    font-family: serif;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 15px; /* Menos padding em telas pequenas */
+    }
+
+    button {
+        width: 30%; /* Botões ocupando toda a largura em telas pequenas */
+        margin: 10px 0; /* Espaçamento vertical */
+    }
+}
