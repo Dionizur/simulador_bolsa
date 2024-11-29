@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: "Libre Bodoni", serif;
     line-height: 1.6;
     color: #333;
     background-color:#000000
@@ -16,23 +16,25 @@ body {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
+    width: 100%;
 }
+
 .containert {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    margin-left:2px;
-    width: 1000px;
-    height: 150px;
-    margin-top: 2px;
-
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 150px; 
 }
 
 .titulo{
-    font-size: 70px;
-    font-family: serif;
+    font-size: 5vw;
+    font-family: "Audiowide", sans-serif;
     color:rgb(255, 255, 255);
     width: 1000px;
+    text-align: center;
 }
 
 
@@ -42,9 +44,13 @@ header {
     padding: 20px;
     text-align: center;
 }
+
 nav{
-    margin-bottom: 20px;    
-    width: 1000px;
+    margin: 0 auto; 
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: center; 
+    gap: 20px;
 }
 
 header .logo {
@@ -54,24 +60,25 @@ header .logo {
 }
 .hero {
     background-image: url(./imagens/teste2.webp);
-    /* background-color:rgb(42, 131, 54);*/  
     background-size: cover;
-    background-position: 0% 100%;
+    background-position: center;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     color: #ffffff;
     opacity: 1;
+    font-family: "Libre Bodoni", serif;
+    text-align: center;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 2.7vw;
     margin-bottom: 10px;
 }
 
 .hero p {
-    font-size: 18px;
+    font-size: 2.3vw;
     margin-bottom: 20px;
 }
 
@@ -80,26 +87,28 @@ header .logo {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 2vw;
     cursor: pointer;
+    font-family: "Libre Bodoni", serif;
 }
 
 .hero .btn:hover {
-    background-color: #3e8e41;
+    background-color: #c3e4c4;
 }
 
 .about {
     background-color: #f7f7f7;
     padding: 20px;
+    text-align: center;
 }
 
 .about h2 {
-    font-size: 24px;
+    font-size: 2.2vw;
     margin-bottom: 10px;
 }
 
 .about p {
-    font-size: 18px;
+    font-size: 1.7vw;
     margin-bottom: 20px;
 }
 
@@ -108,8 +117,9 @@ header .logo {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
+    font-size: 18px;
     cursor: pointer;
+    font-family: "Libre Bodoni", serif;
 }
 
 .about .btn:hover {
@@ -119,10 +129,11 @@ header .logo {
 .offer {
     background-color: #fff;
     padding: 20px;
+    text-align: center;
 }
 
 .offer h2 {
-    font-size: 24px;
+    font-size: 2.2vw;
     margin-bottom: 10px;
 }
 
@@ -136,12 +147,12 @@ header .logo {
 }
 
 .offer .card h3 {
-    font-size: 18px;
+    font-size: 1.9vw;
     margin-bottom: 10px;
 }
 
 .offer .card p {
-    font-size: 16px;
+    font-size: 1.7vw;
     margin-bottom: 20px;
 }
 
@@ -150,25 +161,14 @@ header .logo {
     color: #fff;
     border: none;
     padding: 10px 20px;
-    font-size: 16px;
- cursor: pointer;
+    font-size: 18px;
+    cursor: pointer;
+    font-family: "Libre Bodoni", serif;
 }
 
 .offer .card .btn:hover {
     background-color: #3e8e41;
-}
-
-footer {
-    background-color: #333;
-    color: #fff;
-    padding: 10px;
-    text-align: center;
-    clear: both;
-}
-
-footer p {
-    font-size: 16px;
-    margin-bottom: 10px;
+    margin: 10xp;
 }
 
 .button-name {
@@ -227,3 +227,46 @@ footer p {
   button .acount{
     color: #ffffff;
   }
+
+  footer {
+    background-color: rgb(29, 64, 110);
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    clear: both;
+}
+
+footer p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .titulo {
+        font-size: 40px; 
+    }
+
+    .hero h1 {
+        font-size: 30px; 
+    }
+
+    .hero p {
+        font-size: 16px; 
+    }
+
+    nav {
+        flex-direction: column; 
+    }
+
+    .button-name {
+        margin-left: 0;
+        margin-right: 0; 
+        width: 100%; 
+        text-align: center;
+    }
+    
+    footer p {
+        font-size: 10xp; 
+    }
+}
